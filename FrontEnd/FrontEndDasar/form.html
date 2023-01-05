@@ -40,8 +40,16 @@
     <h1>Pesanan</h1>
     <form action="/order">
         <label for="">Baju</label>
-        <input type="radio" name="baju" id="" value="kemeja" checked> <label for="">Kemeja</label>
-        <input type="radio" name="baju" id="" value="kaos"> <label for="">Kaos</label>
+        <div>
+            <input type="radio" name="baju" id="" value="kemeja" checked> <label for="">Kemeja</label>
+            <input type="radio" name="baju" id="" value="kaos"> <label for="">Kaos</label>
+        </div>
+
+        <div>
+            <label for="ukuran">Ukuran</label>
+            <select name="ukuran" id="ukuran"></select>
+        </div>
+
         <button type="submit">Order</button>
     </form>
 </body>
