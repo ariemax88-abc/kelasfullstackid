@@ -1,17 +1,17 @@
-* {
-    background-color: blueviolet;
+body {
+    background-color: #FDEEDC;
 }
 
 h1, h2, h3 {
-    color: yellow;
+    color: #F1F6F5;
     background-color: black;
     font-size: smaller;
 }
 
 span {
-    color: white;
+    color: black;
 }
 
 #list2 {
-    color: black;
+    color:#DC0000;
 }
