@@ -16,8 +16,15 @@
 
         h1 {
             text-align: center;
+           font-weight: 900;
+           text-decoration: underline blue;
         }
 
         p  {
-            text-align: center;
+           font-weight: 600;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
         }
