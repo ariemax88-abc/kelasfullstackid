@@ -1,4 +1,4 @@
-        h1 {
+       /* h1 {
             color: red;
             font-size: small;
             background-color: blue;
@@ -12,4 +12,8 @@
         p {
             color: white;
             background-color: #708090;
+        }*/
+
+        h1 {
+            text-align: center;
         }
