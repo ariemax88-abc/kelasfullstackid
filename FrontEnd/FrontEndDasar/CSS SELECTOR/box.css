@@ -6,5 +6,11 @@ div {
 }
 
 div {
-    border-style: dashed;
+    border-top-style: double;
+    border-right-style: groove;
+    border-bottom-style: ridge;
+    border-left-style: inset;
+    border-width: 5px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
 }
