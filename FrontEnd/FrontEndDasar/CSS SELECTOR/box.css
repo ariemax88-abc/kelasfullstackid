@@ -6,10 +6,7 @@ div {
 }
 
 div {
-    border-top-style: double;
-    border-right-style: groove;
-    border-bottom-style: ridge;
-    border-left-style: inset;
+    border-style: dotted dashed solid double;
     border-width: 5px;
     border-top-width: 10px;
     border-bottom-width: 10px;
