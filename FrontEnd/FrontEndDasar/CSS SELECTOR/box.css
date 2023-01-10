@@ -7,7 +7,7 @@ div {
 
 div {
     border-style: dotted dashed solid double;
-    border-width: 5px;
+    border-width: 5px 10px 15px 20px;
     border-top-width: 10px;
     border-bottom-width: 10px;
 }
