@@ -12,8 +12,11 @@ div {
 }
 
 div {
-    padding-top: 10px;
+    /*padding-top: 10px;
     padding-right: 40px;
     padding-bottom: 10px;
     padding-left: 20px;
+    padding 1 */
+    padding: 10px 40px;
+    padding: 10px 100px 40px;
 }
