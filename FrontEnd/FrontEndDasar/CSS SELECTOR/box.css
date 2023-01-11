@@ -10,3 +10,10 @@ div {
     border-width: 5px 10px 15px 20px;
     border-color: aqua orange blue red;
 }
+
+div {
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
