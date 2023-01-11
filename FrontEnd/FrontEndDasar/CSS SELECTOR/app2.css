@@ -1,7 +1,9 @@
 h1 {
     background-color: aquamarine;
+    border: 2px solid black;
 }
 
 span {
     background-color: green;
+    border: 2px solid gray;
 }
