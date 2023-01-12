@@ -9,7 +9,7 @@ h1 {
     margin: 0 auto;
     border: 5px solid grey;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     /*
     flex-start
@@ -18,9 +18,10 @@ h1 {
     space-between
     space-around
     space-evently
-    flex-wrap: wrap;
+    
     */
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 #container div {
