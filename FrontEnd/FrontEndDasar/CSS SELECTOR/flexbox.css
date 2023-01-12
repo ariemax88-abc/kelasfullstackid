@@ -5,12 +5,12 @@ h1 {
 #container {
     background-color: grey;
     width: 90%;
-    height: 1500px;
+    height: 500px;
     margin: 0 auto;
     border: 5px solid grey;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     /*
     flex-start
     flex-end
@@ -19,6 +19,7 @@ h1 {
     space-around
     space-evently
     */
+    flex-wrap: wrap-reverse;
 }
 
 #container div {
