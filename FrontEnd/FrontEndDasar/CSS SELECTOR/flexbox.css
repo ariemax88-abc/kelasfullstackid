@@ -8,6 +8,7 @@ h1 {
     height: 500px;
     margin: 0 auto;
     border: 5px solid grey;
+    display: flex;
 }
 
 #container div {
