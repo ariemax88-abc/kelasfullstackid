@@ -5,11 +5,11 @@ h1 {
 #container {
     background-color: grey;
     width: 90%;
-    height: 500px;
+    height: 1500px;
     margin: 0 auto;
     border: 5px solid grey;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 #container div {
