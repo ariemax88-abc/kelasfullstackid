@@ -9,8 +9,16 @@ h1 {
     margin: 0 auto;
     border: 5px solid grey;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    /*
+    flex-start
+    flex-end
+    center
+    space-between
+    space-around
+    space-evently
+    */
 }
 
 #container div {
