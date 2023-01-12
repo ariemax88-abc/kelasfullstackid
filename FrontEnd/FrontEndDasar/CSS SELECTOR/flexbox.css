@@ -10,7 +10,7 @@ h1 {
     border: 5px solid grey;
     display: flex;
     flex-direction: row;
-    justify-content: space-start;
+    justify-content: center;
     /*
     flex-start
     flex-end
@@ -20,7 +20,7 @@ h1 {
     space-evently
     flex-wrap: wrap;
     */
-    align-items: flex-start;
+    align-items: center;
 }
 
 #container div {
