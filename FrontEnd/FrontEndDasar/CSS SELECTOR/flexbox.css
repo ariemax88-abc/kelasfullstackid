@@ -28,7 +28,8 @@ h1 {
 
 #container div {
     width: 200px;
-    height: 200px
+    height: 200px;
+    flex-basis: 500px;
 }
 
 
