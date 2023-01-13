@@ -54,3 +54,21 @@ div:nth-of-type(5) {
     align-self: center;
     align-self: flex-start;
 } */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar{
+    background-color: aquamarine;
+    flex: 1 2 300px;
+}
+
+main .content {
+    background-color: cadetblue;
+    flex: 2 1 800px;
+}
