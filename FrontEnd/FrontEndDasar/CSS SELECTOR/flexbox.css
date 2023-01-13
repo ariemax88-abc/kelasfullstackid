@@ -22,7 +22,7 @@ h1 {
     */
     flex-wrap: wrap;
     align-items: flex-start;
-    align-content: flex-end;
+    align-content: center;
 }
 
 #container div {
