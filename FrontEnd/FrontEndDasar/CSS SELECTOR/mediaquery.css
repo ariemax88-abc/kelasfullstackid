@@ -18,3 +18,9 @@ li {
     margin: 0;
     padding: 0;
 }
+
+@media (width: 500px) {
+    h1 {
+        color: aqua;
+    }
+}
