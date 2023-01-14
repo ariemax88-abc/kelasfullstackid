@@ -57,8 +57,12 @@ html {
 
 body {
     background-color: #529FFA;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .panel {
     background-color: white;
+    border-radius: 10px;
 }
