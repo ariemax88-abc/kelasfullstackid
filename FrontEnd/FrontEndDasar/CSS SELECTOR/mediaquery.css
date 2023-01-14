@@ -71,6 +71,9 @@ li {
     h1 {
         font-size: 4em;
     }
+    nav {
+        flex-direction: column;
+    }
 }
 @media (max-width: 576px) {
     h1 {
