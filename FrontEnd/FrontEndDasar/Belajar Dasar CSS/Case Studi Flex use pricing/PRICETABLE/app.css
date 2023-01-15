@@ -68,7 +68,8 @@ body {
     padding: 15px 25px;
     width: 100%;
     max-width: 960px;
-	flex-direction: column;
+	display: flex;
+	flex-direction: row;
 	text-align: center;
 	text-transform: uppercase;
 }
