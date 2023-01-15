@@ -72,3 +72,9 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+.pricing-header {
+	color: grey;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
