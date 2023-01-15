@@ -73,6 +73,10 @@ body {
 	text-transform: uppercase;
 }
 
+.pricing-plan {
+	border-bottom: 1px solid #e1f1ff;
+}
+
 .pricing-header {
 	color: grey;
 	font-weight: 600;
@@ -82,4 +86,13 @@ body {
 .pricing-features {
 	margin: 50px 0 25px;
 	color: #015ff9;
+}
+
+.pricing-features-item {
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 15px 0 ;
+	border-top: 1px solid #e1f1ff;
 }
