@@ -15,7 +15,7 @@
 //     console.log(i);
 // }
 
-for (let i = 20; i >= 0; i--) {
+for (let i = 20; i >= 0; i -= 2) {
     // console.log("saya berada di dalam loop")
     console.log(i);
 }
