@@ -21,8 +21,14 @@
 // }
 
 // coba generat prekalian
-for (let i = 10; i <= 100000; i *= 10) {
-    // console.log("saya berada di dalam loop")
-    console.log(i);
+// for (let i = 10; i <= 100000; i *= 10) {
+//     // console.log("saya berada di dalam loop")
+//     console.log(i);
+// }
+
+// Contoh: infinity loop don't try :v
+
+for (let i = 20; i >= 0; i++) {
+    console.log(i)
 }
 
