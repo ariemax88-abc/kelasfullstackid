@@ -28,7 +28,14 @@
 
 // Contoh: infinity loop don't try :v
 
-for (let i = 20; i >= 0; i++) {
-    console.log(i)
-}
+// for (let i = 20; i >= 0; i++) {
+//     console.log(i)
+// }
 
+
+// increment loop use array
+const animals = ['cat', 'deer', 'hog', 'koala', 'zebra'];
+
+for (let i = 0; i < animals.length; i++) {
+    console.log(i + 1, animals[i]);
+}
