@@ -39,6 +39,11 @@ body {
     line-height: 2;
 }
 
+.content {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 @media (max-width: 1200px) {
     #title-head h1 {
         font-weight: 100;
