@@ -11,3 +11,7 @@ body {
 #navbar .nav-link {
     color: white;
 }
+
+#navbar .nav-link:hover {
+    color: #354259;
+}
