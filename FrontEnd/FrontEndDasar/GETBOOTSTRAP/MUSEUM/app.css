@@ -2,3 +2,12 @@ body {
     background: #c2ded1;
     font-family: 'Nunito', sans-serif; 
 }
+
+#navbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#navbar .nav-link {
+    color: white;
+}
