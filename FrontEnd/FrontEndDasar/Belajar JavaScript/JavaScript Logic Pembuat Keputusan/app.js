@@ -48,13 +48,19 @@
 const password = prompt("buat password");
 
 // Password harus sepanjang 6 karakter
-if(password.length >= 6) {
-    if(password.indexOf(' ') === -1) {
-        console.log('Password valid');
-    } else {
-        console.log('Password tidak boleh ada spasi');
-    }
+// if(password.length >= 6) {
+//     if(password.indexOf(' ') === -1) {
+//         console.log('Password valid');
+//     } else {
+//         console.log('Password tidak boleh ada spasi');
+//     }
+// } else {
+//     console.log('Password minimal 6 karakter');
+// }
+
+if (password.length >= 6 && password.indexOf(' ') === -1) {
+    console.log('Password Valid')
 } else {
-    console.log('Password minimal 6 karakter');
+    console.log('Password tidak memenuhi syarat');
 }
 
