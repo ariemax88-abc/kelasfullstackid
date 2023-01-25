@@ -4,7 +4,7 @@
 
 console.log("sebelum pembanding")
 
-if (1 + 1 === 3) {
+if (1 + 1 === 2) {
     console.log('di dalam pembanding');
 }
 
