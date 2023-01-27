@@ -60,13 +60,34 @@
 // console.log(array1);
 // Expected output: Array [1, 100000, 21, 30, 4]
 
-const months = ['Jan', 'March', 'April', 'June', 'july', 'aug'];
-months.splice(1, 0, 'feb');
-// Inserts at index 1
-console.log(months);
-// Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+// const months = ['Jan', 'March', 'April', 'June', 'july', 'aug'];
+// months.splice(1, 0, 'feb');
+// // Inserts at index 1
+// console.log(months);
+// // Expected output: Array ["Jan", "Feb", "March", "April", "June"]
 
-months.splice(4, 2, 'May');
-// Replaces 1 element at index 4
-console.log(months);
-// Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+// months.splice(4, 2, 'May');
+// // Replaces 1 element at index 4
+// console.log(months);
+// // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// Expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2, -1));
+// Expected output: Array ["camel", "duck"]
+
+console.log(animals.slice());
+// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+
