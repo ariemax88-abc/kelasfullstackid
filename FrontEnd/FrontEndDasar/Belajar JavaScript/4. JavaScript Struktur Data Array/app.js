@@ -34,8 +34,18 @@
 
 // console.log(array3);
 
-const beast = ['ant', 'bison', 'camel', 'dark', 'bison'];
+// const beast = ['ant', 'bison', 'camel', 'dark', 'bison'];
 
-console.log(beast.indexOf('bison'));
-console.log(beast.indexOf('bison', 2));
-console.log(beast.indexOf('giraffe'));
+// console.log(beast.indexOf('bison'));
+// console.log(beast.indexOf('bison', 2));
+// console.log(beast.indexOf('giraffe'));
+
+const array1 = [1,2,3];
+
+console.log(array1.includes(2)); //apakah ada nilai 2 di dalam array1
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+
+console.log(pets.includes('at'));
