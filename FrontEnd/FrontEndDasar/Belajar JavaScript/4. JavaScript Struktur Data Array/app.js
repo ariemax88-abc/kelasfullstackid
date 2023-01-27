@@ -27,9 +27,15 @@
 
 // console.log(student);
 
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
+// const array1 = ['a', 'b', 'c'];
+// const array2 = ['d', 'e', 'f'];
 
-const array3 = array2.concat(array1);
+// const array3 = array2.concat(array1);
 
-console.log(array3);
+// console.log(array3);
+
+const beast = ['ant', 'bison', 'camel', 'dark', 'bison'];
+
+console.log(beast.indexOf('bison'));
+console.log(beast.indexOf('bison', 2));
+console.log(beast.indexOf('giraffe'));
