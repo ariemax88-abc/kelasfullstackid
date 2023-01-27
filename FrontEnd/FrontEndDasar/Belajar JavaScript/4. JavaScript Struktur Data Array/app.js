@@ -20,9 +20,16 @@
 
 // console.log(barbel);
 
-let student = ['Bobby', 'Charlie', 'Denies', 'Eula'];
-student.unshift('Ain');
-student.unshift(0);
-student.shift();
+// let student = ['Bobby', 'Charlie', 'Denies', 'Eula'];
+// student.unshift('Ain');
+// student.unshift(0);
+// student.shift();
 
-console.log(student);
+// console.log(student);
+
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+
+const array3 = array2.concat(array1);
+
+console.log(array3);
