@@ -50,12 +50,23 @@
 
 // console.log(pets.includes('at'));
 
-const months = ['March', 'Jan', 'Feb', 'Dec'];
-months.sort();
-console.log(months);
-// // Expected output: Array ["Dec", "Feb", "Jan", "March"]
+// const months = ['March', 'Jan', 'Feb', 'Dec'];
+// months.sort();
+// console.log(months);
+// // // Expected output: Array ["Dec", "Feb", "Jan", "March"]
 
-const array1 = [1, 30, 4, 21, 100000];
-array1.sort();
-console.log(array1);
+// const array1 = [1, 30, 4, 21, 100000];
+// array1.sort();
+// console.log(array1);
 // Expected output: Array [1, 100000, 21, 30, 4]
+
+const months = ['Jan', 'March', 'April', 'June', 'july', 'aug'];
+months.splice(1, 0, 'feb');
+// Inserts at index 1
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 2, 'May');
+// Replaces 1 element at index 4
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "May"]
