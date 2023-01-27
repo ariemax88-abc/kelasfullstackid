@@ -40,12 +40,22 @@
 // console.log(beast.indexOf('bison', 2));
 // console.log(beast.indexOf('giraffe'));
 
-const array1 = [1,2,3];
+// const array1 = [1,2,3];
 
-console.log(array1.includes(2)); //apakah ada nilai 2 di dalam array1
+// console.log(array1.includes(2)); //apakah ada nilai 2 di dalam array1
 
-const pets = ['cat', 'dog', 'bat'];
+// const pets = ['cat', 'dog', 'bat'];
 
-console.log(pets.includes('cat'));
+// console.log(pets.includes('cat'));
 
-console.log(pets.includes('at'));
+// console.log(pets.includes('at'));
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// // Expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// Expected output: Array [1, 100000, 21, 30, 4]
