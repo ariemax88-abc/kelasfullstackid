@@ -103,14 +103,19 @@
 // console.log('array1:', array1);
 // // Expected output: "array1:" Array ["three", "two", "one"]
 
-const elements = ['Fire', 'Air', 'Water'];
+// const elements = ['Fire', 'Air', 'Water'];
 
-console.log(elements.join());
-// Expected output: "Fire,Air,Water"
+// console.log(elements.join());
+// // Expected output: "Fire,Air,Water"
 
-console.log(elements.join(''));
-// Expected output: "FireAirWater"
+// console.log(elements.join(''));
+// // Expected output: "FireAirWater"
 
-console.log(elements.join('-'));
-// Expected output: "Fire-Air-Water"
+// console.log(elements.join('-'));
+// // Expected output: "Fire-Air-Water"
+
+const kumpulanWarna = ["merah", "kuning", "hijau"];
+kumpulanWarna.push("biru");
+kumpulanWarna.push("serta lainnya");
+console.log(kumpulanWarna);
 
