@@ -114,8 +114,17 @@
 // console.log(elements.join('-'));
 // // Expected output: "Fire-Air-Water"
 
-const kumpulanWarna = ["merah", "kuning", "hijau"];
-kumpulanWarna.push("biru");
-kumpulanWarna.push("serta lainnya");
-console.log(kumpulanWarna);
+// const kumpulanWarna = ["merah", "kuning", "hijau"];
+// kumpulanWarna.push("biru");
+// kumpulanWarna.push("serta lainnya");
+// console.log(kumpulanWarna);
+
+const board = [
+    [null, null, '0'],
+    ['0', 'x', null],
+    ['x', null, '0']
+]
+
+console.log(board);
+console.log(board[0][2]);
 
