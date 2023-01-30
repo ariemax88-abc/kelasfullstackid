@@ -18,4 +18,16 @@ const barang = {
     }
 }
 
-console.log(barang);    
+console.log(barang); 
+
+console.log(orang['nama']);
+console.log(orang['tanggal']);
+console.log(orang['alamat']);
+console.log(orang.nama);
+console.log(orang.tanggal);
+console.log(orang.alamat);
+
+console.log(barang['is' + 'Ready']);
+
+
+
