@@ -28,6 +28,9 @@ console.log(orang.tanggal);
 console.log(orang.alamat);
 
 console.log(barang['is' + 'Ready']);
+console.log(barang['loca' + 'tion']);
+
+
 
 
 
