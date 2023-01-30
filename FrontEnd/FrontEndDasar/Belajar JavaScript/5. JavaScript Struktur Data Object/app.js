@@ -38,6 +38,10 @@ console.log(orang);
 // mengubah nama object use chain titik (".")
 console.log(orang.tanggal = 2);
 
+let alamat = 'alamat'
+console.log(orang[alamat] = 'Medan');
+console.log(orang);
+
 
 
 
