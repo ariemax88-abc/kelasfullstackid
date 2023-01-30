@@ -31,6 +31,13 @@ console.log(barang['is' + 'Ready']);
 console.log(barang['loca' + 'tion']);
 console.log(barang.location.indonesia);
 
+// mengubah nama object
+console.log(orang['nama'] = 'febby');
+console.log(orang);
+
+// mengubah nama object use chain titik (".")
+console.log(orang.tanggal = 2);
+
 
 
 
