@@ -42,6 +42,9 @@ let alamat = 'alamat'
 console.log(orang[alamat] = 'Medan');
 console.log(orang);
 
+console.log(orang.gender = 'Perempuan');
+console.log(orang);
+
 
 
 
