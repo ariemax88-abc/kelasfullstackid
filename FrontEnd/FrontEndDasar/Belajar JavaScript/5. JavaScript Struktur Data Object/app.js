@@ -29,6 +29,7 @@ console.log(orang.alamat);
 
 console.log(barang['is' + 'Ready']);
 console.log(barang['loca' + 'tion']);
+console.log(barang.location.indonesia);
 
 
 
