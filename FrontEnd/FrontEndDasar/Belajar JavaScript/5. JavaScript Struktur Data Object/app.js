@@ -71,6 +71,9 @@ console.log(shoppingCart[0].product);
 console.log(shoppingCart[0].price);
 console.log(shoppingCart[0].quantity);
 
+// panggil data object use -> []
+console.log(shoppingCart[0]['product']);
+
 
 
 
