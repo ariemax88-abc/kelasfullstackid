@@ -31,9 +31,9 @@
 //     console.log(i);
 // }
 
-const animals = ['cat', 'deer', 'hog', 'koala'];
+const animals = ['cat', 'deer', 'hog', 'koala', 'zebra'];
 
 for (let i = 0;  i < animals.length; i++) {
-    console.log(i, animals[i]);
+    console.log(i+1, animals[i]);
 }
 
