@@ -31,9 +31,16 @@
 //     console.log(i);
 // }
 
-const animals = ['cat', 'deer', 'hog', 'koala', 'zebra'];
+// const animals = ['cat', 'deer', 'hog', 'koala', 'zebra'];
 
-for (let i = 0;  i < animals.length; i++) {
-    console.log(i+1, animals[i]);
+// for (let i = 0;  i < animals.length; i++) {
+//     console.log(i+1, animals[i]);
+// }
+
+const pilihan = 'abcd';
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i}. Soal nomor ${i}:`)
+    for (let j = 0; j < pilihan.length; j++) {
+        console.log(`   ${pilihan[j]}. Pilihan Jawaban`);
+    }
 }
-
