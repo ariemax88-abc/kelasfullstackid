@@ -45,6 +45,32 @@ console.log(orang);
 console.log(orang.gender = 'Perempuan');
 console.log(orang);
 
+// new struktur data array shopping Cart
+const shoppingCart = [
+    {
+        product: 'vue.js',
+        price: 1.22,
+        quantity: 3
+    },
+    {
+        product: 'react.js',
+        price: 2.22,
+        quantity: 3
+    },
+    {
+        product: 'angular.js',
+        price: 3.22,
+        quantity: 3
+    },
+]
+
+console.log(shoppingCart[0]);
+//console.log(shoppingCart);
+
+console.log(shoppingCart[0].product);
+console.log(shoppingCart[0].price);
+console.log(shoppingCart[0].quantity);
+
 
 
 
