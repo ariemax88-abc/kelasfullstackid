@@ -81,11 +81,17 @@
 
 
 // break yaitu memberhentikan proses perulangan 
-let input = prompt ('Hei, say something!');
-while(true) {
-    input = prompt(input);
-    if(input.toLowerCase() === "stop"){
-        break;
-    } 
+// let input = prompt ('Hei, say something!');
+// while(true) {
+//     input = prompt(input);
+//     if(input.toLowerCase() === "stop"){
+//         break;
+//     } 
+// }
+// alert('ok');
+
+// key break untuk memberhentikan angka misal angka i = 100
+for (let i = 0; i < 10000; i++){
+    console.log(i);
+    if(i === 100) break;
 }
-alert('ok');
