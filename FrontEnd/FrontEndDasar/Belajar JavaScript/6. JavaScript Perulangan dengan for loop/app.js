@@ -174,13 +174,20 @@ const studentScore = {
     Mateo: 22,
 };
 
-for (let student in studentScore) {
-    console.log(`${student} memiliki skor ${studentScore[student]}`);
-}
+// for (let student in studentScore) {
+//     console.log(`${student} memiliki skor ${studentScore[student]}`);
+// }
 
 // 11. Melakukan Perulangan Pada Object Dengan Elegan For In (1)
 // Convert tipe data object to array
 console.log(Object.values(studentScore));
 
-
+//11. Melakukan Perulangan Pada Object Dengan Elegan For In (2)
+// Jumlah totalscore dibagi Panjang atau banyaknya siswa untuk get nilai rata2
+let total = 0;
+let scores = Object.values(studentScore);
+for (let score of scores) {
+    total += score;
+}
+console.log(total / scores.length);
 
