@@ -110,8 +110,10 @@ const targetNum = Math.floor(Math.random() * maximum) + 1;
 console.log(targetNum);
 
 let guess = parseInt(prompt('Isi tebakan pertama kamu!'));
+let attempts = 1;
 
 while (parseInt(guess) !== targetNum) {
+    attempts++;
     if (guess > targetNum) {
         guess = parseInt(prompt('Terlalu tinggi! tebak lagi:'));
     } else {
@@ -119,4 +121,4 @@ while (parseInt(guess) !== targetNum) {
     }
 }
 
-alert('Selamat Tebakan Anda Benar!!');
+alert(`Selamat Tebakan Anda Benar! Dengan percobaan ${attempts} kali`);
