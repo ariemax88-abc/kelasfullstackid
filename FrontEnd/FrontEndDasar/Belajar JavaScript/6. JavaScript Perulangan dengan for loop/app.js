@@ -125,7 +125,7 @@
 
 
 // 10. Cara Elegan Melakukan Perulangan Pada Array For Of
-const fruits = ['Banana', 'Orange', 'Apple', 'Mango', 'Strawberry'];
+// const fruits = ['Banana', 'Orange', 'Apple', 'Mango', 'Strawberry'];
 
 // use for biasa
 // for(let i = 0; i < fruits.length; i++) {
@@ -133,6 +133,29 @@ const fruits = ['Banana', 'Orange', 'Apple', 'Mango', 'Strawberry'];
 // }
 
 // Use for of
-for (let fruit of fruits){
-    console.log(`Buah ${fruit}`);
+// for (let fruit of fruits){
+//     console.log(`Buah ${fruit}`);
+// }
+
+// 10. Cara Elegan Melakukan Perulangan Pada Array For Of (2)
+// case studentRow
+
+const studentRow = [
+    ['Olivia', 'Lian', 'Emma', 'Noah'],
+    ['Amelia', 'Oliver', 'Ava', 'Elijah'],
+    ['Sophia', 'Mateo', 'Isabella', 'Lucas'],
+];
+
+// for (let i = 0; i < studentRow.length; i++){
+//     const row = studentRow[i]; 
+//     console.log(`Seat Row #${i + 1}`);
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(`   ${row[j]}`);
+//     }
+// }
+
+for (let row of studentRow) {
+    for (let student of row){
+        console.log(student)
+    }
 }
