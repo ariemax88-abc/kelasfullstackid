@@ -38,20 +38,32 @@
 // }
 
 // coding an dibawah masih error - koreksi lagi :)
-const studentRow = [
-    ['Olivia', 'Lian', 'Emma', 'Noah'],
-    ['Amelia', 'Oliver', 'Ava', 'Elijah'],
-    ['Sophia', 'Mateo', 'Isabella', 'Lucas'],
-];
+// const studentRow = [
+//     ['Olivia', 'Lian', 'Emma', 'Noah'],
+//     ['Amelia', 'Oliver', 'Ava', 'Elijah'],
+//     ['Sophia', 'Mateo', 'Isabella', 'Lucas'],
+// ];
 
-for (let i = 0; i < studentRow.length; i++){
-    const row = studentRow(i); 
-    console.log(`Seat Row #${i + 1}`);
-    for (let j = 0; j < row.length; j++) {
-        console.log(`   ${row[j]}`);
-    }
+// for (let i = 0; i < studentRow.length; i++){
+//     const row = studentRow(i); 
+//     console.log(`Seat Row #${i + 1}`);
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(`   ${row[j]}`);
+//     }
 
+// }
+
+let num = 0;
+while (num < 10) {
+    console.log(num);
+    num++;
 }
+
+// for (let num = 0; num < 10; num++){
+//     console.log(num);
+// }
+
+
 
 // const pilihan = 'abcd';
 // for (let i = 1; i <= 10; i++) {
