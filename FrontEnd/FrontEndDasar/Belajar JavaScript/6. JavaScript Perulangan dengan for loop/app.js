@@ -53,23 +53,23 @@
 
 // }
 
-let num = 0;
-while (num < 10) {
-    console.log(num);
-    num++;
-}
+// let num = 0;
+// while (num < 10) {
+//     console.log(num);
+//     num++;
+// }
 
 // for (let num = 0; num < 10; num++){
 //     console.log(num);
 // }
 
-const PASSWORD = 'Pass123';
+// const PASSWORD = 'Pass123';
 
-let guess = prompt('enter the password');
-while (guess !== PASSWORD) {
-    guess = prompt('enter the password');
-}
-alert('congrats! the password is correct');
+// let guess = prompt('enter the password');
+// while (guess !== PASSWORD) {
+//     guess = prompt('enter the password');
+// }
+// alert('congrats! the password is correct');
 
 // const pilihan = 'abcd';
 // for (let i = 1; i <= 10; i++) {
@@ -78,3 +78,14 @@ alert('congrats! the password is correct');
 //         console.log(`   ${pilihan[j]}. Pilihan Jawaban`);
 //     }
 // }
+
+
+// break yaitu memberhentikan proses perulangan 
+let input = prompt ('Hei, say something!');
+while(true) {
+    input = prompt(input);
+    if(input.toLowerCase() === "stop"){
+        break;
+    } 
+}
+alert('ok');
