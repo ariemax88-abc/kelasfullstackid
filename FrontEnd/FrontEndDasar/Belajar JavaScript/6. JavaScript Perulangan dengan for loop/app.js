@@ -63,7 +63,13 @@ while (num < 10) {
 //     console.log(num);
 // }
 
+const PASSWORD = 'Pass123';
 
+let guess = prompt('enter the password');
+while (guess !== PASSWORD) {
+    guess = prompt('enter the password');
+}
+alert('congrats! the password is correct');
 
 // const pilihan = 'abcd';
 // for (let i = 1; i <= 10; i++) {
