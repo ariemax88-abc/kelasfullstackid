@@ -174,5 +174,5 @@ const studentScore = {
 };
 
 for (let student in studentScore) {
-    console.log(`${student}`);
+    console.log(`${student} memiliki skor ${studentScore[student]}`);
 }
