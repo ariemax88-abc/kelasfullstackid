@@ -101,24 +101,38 @@
 // }
 
 // 9. Membuat Game Tebak Tebakkan Angka Dengan While
-let maximum = parseInt(prompt('Masukkan nilai maksimal!'));
-while (!maximum) {
-    maximum = parseInt(prompt('Masukkan nilai maksimal!'));
+// let maximum = parseInt(prompt('Masukkan nilai maksimal!'));
+// while (!maximum) {
+//     maximum = parseInt(prompt('Masukkan nilai maksimal!'));
+// }
+
+// const targetNum = Math.floor(Math.random() * maximum) + 1;
+// console.log(targetNum);
+
+// let guess = parseInt(prompt('Isi tebakan pertama kamu!'));
+// let attempts = 1;
+
+// while (parseInt(guess) !== targetNum) {
+//     attempts++;
+//     if (guess > targetNum) {
+//         guess = parseInt(prompt('Terlalu tinggi! tebak lagi:'));
+//     } else {
+//         guess = parseInt(prompt('Terlalu rendah! tebak lagi:'));
+//     }
+// }
+
+// alert(`Selamat Tebakan Anda Benar! Dengan percobaan ${attempts} kali`);
+
+
+// 10. Cara Elegan Melakukan Perulangan Pada Array For Of
+const fruits = ['Banana', 'Orange', 'Apple', 'Mango', 'Strawberry'];
+
+// use for biasa
+// for(let i = 0; i < fruits.length; i++) {
+//     console.log(`Buah ${fruits[i]}`);
+// }
+
+// Use for of
+for (let fruit of fruits){
+    console.log(`Buah ${fruit}`);
 }
-
-const targetNum = Math.floor(Math.random() * maximum) + 1;
-console.log(targetNum);
-
-let guess = parseInt(prompt('Isi tebakan pertama kamu!'));
-let attempts = 1;
-
-while (parseInt(guess) !== targetNum) {
-    attempts++;
-    if (guess > targetNum) {
-        guess = parseInt(prompt('Terlalu tinggi! tebak lagi:'));
-    } else {
-        guess = parseInt(prompt('Terlalu rendah! tebak lagi:'));
-    }
-}
-
-alert(`Selamat Tebakan Anda Benar! Dengan percobaan ${attempts} kali`);
