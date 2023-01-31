@@ -37,21 +37,20 @@
 //     console.log(i+1, animals[i]);
 // }
 
-// coding an dibawah masih error - koreksi lagi :)
-// const studentRow = [
-//     ['Olivia', 'Lian', 'Emma', 'Noah'],
-//     ['Amelia', 'Oliver', 'Ava', 'Elijah'],
-//     ['Sophia', 'Mateo', 'Isabella', 'Lucas'],
-// ];
+// sudah diperbaiki
+const studentRow = [
+    ['Olivia', 'Lian', 'Emma', 'Noah'],
+    ['Amelia', 'Oliver', 'Ava', 'Elijah'],
+    ['Sophia', 'Mateo', 'Isabella', 'Lucas'],
+];
 
-// for (let i = 0; i < studentRow.length; i++){
-//     const row = studentRow(i); 
-//     console.log(`Seat Row #${i + 1}`);
-//     for (let j = 0; j < row.length; j++) {
-//         console.log(`   ${row[j]}`);
-//     }
-
-// }
+for (let i = 0; i < studentRow.length; i++){
+    const row = studentRow[i]; 
+    console.log(`Seat Row #${i + 1}`);
+    for (let j = 0; j < row.length; j++) {
+        console.log(`   ${row[j]}`);
+    }
+}
 
 // let num = 0;
 // while (num < 10) {
@@ -91,7 +90,7 @@
 // alert('ok');
 
 // key break untuk memberhentikan angka misal angka i = 100
-for (let i = 0; i < 10000; i++){
-    console.log(i);
-    if(i === 100) break;
-}
+// for (let i = 0; i < 10000; i++){
+//     console.log(i);
+//     if(i === 100) break;
+// }
