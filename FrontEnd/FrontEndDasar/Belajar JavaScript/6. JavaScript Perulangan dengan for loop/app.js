@@ -1,3 +1,4 @@
+// 1. Pengenalan Perulangan
 // looping manual :v
 // console.log(1)
 // console.log(2)
@@ -37,21 +38,22 @@
 //     console.log(i+1, animals[i]);
 // }
 
-// sudah diperbaiki
-const studentRow = [
-    ['Olivia', 'Lian', 'Emma', 'Noah'],
-    ['Amelia', 'Oliver', 'Ava', 'Elijah'],
-    ['Sophia', 'Mateo', 'Isabella', 'Lucas'],
-];
+// Mendapatkan Data Dari Nested Array Dengan Nested Loop
+// const studentRow = [
+//     ['Olivia', 'Lian', 'Emma', 'Noah'],
+//     ['Amelia', 'Oliver', 'Ava', 'Elijah'],
+//     ['Sophia', 'Mateo', 'Isabella', 'Lucas'],
+// ];
 
-for (let i = 0; i < studentRow.length; i++){
-    const row = studentRow[i]; 
-    console.log(`Seat Row #${i + 1}`);
-    for (let j = 0; j < row.length; j++) {
-        console.log(`   ${row[j]}`);
-    }
-}
+// for (let i = 0; i < studentRow.length; i++){
+//     const row = studentRow[i]; 
+//     console.log(`Seat Row #${i + 1}`);
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(`   ${row[j]}`);
+//     }
+// }
 
+// 7. Perulangan Menggunakan Perintah While
 // let num = 0;
 // while (num < 10) {
 //     console.log(num);
@@ -64,11 +66,13 @@ for (let i = 0; i < studentRow.length; i++){
 
 // const PASSWORD = 'Pass123';
 
+// 7. Perulangan Menggunakan Perintah While (1)
 // let guess = prompt('enter the password');
 // while (guess !== PASSWORD) {
 //     guess = prompt('enter the password');
 // }
 // alert('congrats! the password is correct');
+
 
 // const pilihan = 'abcd';
 // for (let i = 1; i <= 10; i++) {
@@ -78,7 +82,7 @@ for (let i = 0; i < studentRow.length; i++){
 //     }
 // }
 
-
+// 8. Kata Kunci Break Untuk Memberhentikan Perulangan
 // break yaitu memberhentikan proses perulangan 
 // let input = prompt ('Hei, say something!');
 // while(true) {
@@ -89,6 +93,7 @@ for (let i = 0; i < studentRow.length; i++){
 // }
 // alert('ok');
 
+// 8. Kata Kunci Break Untuk Memberhentikan Perulangan (1)
 // key break untuk memberhentikan angka misal angka i = 100
 // for (let i = 0; i < 10000; i++){
 //     console.log(i);
