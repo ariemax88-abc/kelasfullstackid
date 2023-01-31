@@ -140,11 +140,11 @@
 // 10. Cara Elegan Melakukan Perulangan Pada Array For Of (2)
 // case studentRow
 
-const studentRow = [
-    ['Olivia', 'Lian', 'Emma', 'Noah'],
-    ['Amelia', 'Oliver', 'Ava', 'Elijah'],
-    ['Sophia', 'Mateo', 'Isabella', 'Lucas', 'ariemax'],
-];
+// const studentRow = [
+//     ['Olivia', 'Lian', 'Emma', 'Noah'],
+//     ['Amelia', 'Oliver', 'Ava', 'Elijah'],
+//     ['Sophia', 'Mateo', 'Isabella', 'Lucas', 'ariemax'],
+// ];
 
 // for (let i = 0; i < studentRow.length; i++){
 //     const row = studentRow[i]; 
@@ -154,8 +154,25 @@ const studentRow = [
 //     }
 // }
 
-for (let row of studentRow) {
-    for (let student of row){
-        console.log(student)
-    }
+// for (let row of studentRow) {
+//     for (let student of row){
+//         console.log(student)
+//     }
+// }
+
+const studentScore = {
+    Olivia: 20,
+    Lian: 13,
+    Emma: 40,
+    Noah: 18,
+    Amelia: 32,
+    Oliver: 10,
+    Ava: 11,
+    Elijah: 21,
+    Sophia: 14,
+    Mateo: 22,
+};
+
+for (let student in studentScore) {
+    console.log(`${student}`);
 }
