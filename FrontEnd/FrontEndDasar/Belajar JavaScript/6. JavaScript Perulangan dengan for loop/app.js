@@ -143,7 +143,7 @@
 const studentRow = [
     ['Olivia', 'Lian', 'Emma', 'Noah'],
     ['Amelia', 'Oliver', 'Ava', 'Elijah'],
-    ['Sophia', 'Mateo', 'Isabella', 'Lucas'],
+    ['Sophia', 'Mateo', 'Isabella', 'Lucas', 'ariemax'],
 ];
 
 // for (let i = 0; i < studentRow.length; i++){
