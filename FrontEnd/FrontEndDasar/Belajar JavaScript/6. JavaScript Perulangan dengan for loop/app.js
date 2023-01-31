@@ -37,6 +37,7 @@
 //     console.log(i+1, animals[i]);
 // }
 
+// coding an dibawah masih error - koreksi lagi :)
 const studentRow = [
     ['Olivia', 'Lian', 'Emma', 'Noah'],
     ['Amelia', 'Oliver', 'Ava', 'Elijah'],
@@ -44,8 +45,12 @@ const studentRow = [
 ];
 
 for (let i = 0; i < studentRow.length; i++){
-    const row = studentRow(i);
-    console.log(row);
+    const row = studentRow(i); 
+    console.log(`Seat Row #${i + 1}`);
+    for (let j = 0; j < row.length; j++) {
+        console.log(`   ${row[j]}`);
+    }
+
 }
 
 // const pilihan = 'abcd';
