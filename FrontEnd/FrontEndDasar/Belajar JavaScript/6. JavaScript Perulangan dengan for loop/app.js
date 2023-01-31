@@ -160,6 +160,7 @@
 //     }
 // }
 
+// 11. Melakukan Perulangan Pada Object Dengan Elegan For In
 const studentScore = {
     Olivia: 20,
     Lian: 13,
@@ -176,3 +177,10 @@ const studentScore = {
 for (let student in studentScore) {
     console.log(`${student} memiliki skor ${studentScore[student]}`);
 }
+
+// 11. Melakukan Perulangan Pada Object Dengan Elegan For In (1)
+// Convert tipe data object to array
+console.log(Object.values(studentScore));
+
+
+
