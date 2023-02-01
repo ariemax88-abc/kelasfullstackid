@@ -52,10 +52,10 @@ let programming = 'JavaScript';
 
 function typeSafe(){
     let programming = 'TypeScript';
-   
+    console.log(programming);
 }
+typeSafe();
 
-console.log(programming);
 
 // typeSafe();
 
