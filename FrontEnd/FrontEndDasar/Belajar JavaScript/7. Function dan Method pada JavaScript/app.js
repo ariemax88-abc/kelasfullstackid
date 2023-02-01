@@ -46,17 +46,13 @@
 //     return a + b;
 // }
 
-// Visibilitas Variabel Sesuai Scope Atau Ruang Lingkup
+// 6. Visibilitas Variabel Sesuai Scope Atau Ruang Lingkup
 
 let programming = 'JavaScript';
 
 function typeSafe(){
-    // let programming = 'TypeScript';
+   let programming = 'TypeScript';
     console.log(programming);
 }
-typeSafe();
-
-
-// typeSafe();
-
-// console.log.programming();
+typeSafe(); 
+console.log(programming);
