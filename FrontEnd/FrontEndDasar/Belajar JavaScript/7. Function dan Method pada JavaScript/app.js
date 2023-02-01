@@ -18,9 +18,15 @@
 // nyanyi();
 
 // 3. Argument Dan Parameter Dalam Function
-function selamatPagi(name){
-    console.log(`Halo, ${name}. Selamat Pagi!`);
-}
+// function selamatPagi(name){
+//     console.log(`Halo, ${name}. Selamat Pagi!`);
+// }
 
 // jadi Aim disini kita sebut sbg argument
-selamatPagi('Aim');
+// selamatPagi('Aim');
+
+// 4. Multiple Parameter Dan Argument
+function jumlahkan(a = 0, b = 0) {
+    const total = a + b;
+    console.log(total);
+}
