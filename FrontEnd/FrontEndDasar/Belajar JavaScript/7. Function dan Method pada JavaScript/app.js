@@ -2,17 +2,25 @@
 // let lemparDadu = console.log(lemparDadu);
 
 //2. Mendefinisikan Dan Menjalankan Function
-function lemparDadu(){
-    console.log(Math.floor(Math.random() * 6 ) + 1);
-}
-function nyanyi() {
-    console.log("Cek...");
-    console.log("Do re mi...");
+// function lemparDadu(){
+//     console.log(Math.floor(Math.random() * 6 ) + 1);
+// }
+// function nyanyi() {
+//     console.log("Cek...");
+//     console.log("Do re mi...");
+// }
+
+// // panggil fungsi 
+// nyanyi();
+// nyanyi();
+// nyanyi();
+// nyanyi();
+// nyanyi();
+
+// 3. Argument Dan Parameter Dalam Function
+function selamatPagi(name){
+    console.log(`Halo, ${name}. Selamat Pagi!`);
 }
 
-// panggil fungsi 
-nyanyi();
-nyanyi();
-nyanyi();
-nyanyi();
-nyanyi();
+// jadi Aim disini kita sebut sbg argument
+selamatPagi('Aim');
