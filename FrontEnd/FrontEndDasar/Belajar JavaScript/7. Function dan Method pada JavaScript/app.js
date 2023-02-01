@@ -32,10 +32,17 @@
 // }
 
 // 5. Statement Return Pada Function
-function jumlahkan(a, b) {
-    const total = a + b;
-    return total;
-    console.log('Selesai');
-}
+// function jumlahkan(a, b) {
+//     const total = a + b;
+//     return total;
+//     console.log('Selesai');
+// }
 
+// 5. Statement Return Pada Function (2)
+function jumlahkan(a, b) {
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return 'Bukan angka';
+    }
+    return a + b;
+}
 
