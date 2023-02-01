@@ -39,10 +39,24 @@
 // }
 
 // 5. Statement Return Pada Function (2)
-function jumlahkan(a, b) {
-    if (typeof a !== 'number' || typeof b !== 'number') {
-        return 'Bukan angka';
-    }
-    return a + b;
+// function jumlahkan(a, b) {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//         return 'Bukan angka';
+//     }
+//     return a + b;
+// }
+
+// Visibilitas Variabel Sesuai Scope Atau Ruang Lingkup
+
+let programming = 'JavaScript';
+
+function typeSafe(){
+    let programming = 'TypeScript';
+   
 }
 
+console.log(programming);
+
+// typeSafe();
+
+// console.log.programming();
