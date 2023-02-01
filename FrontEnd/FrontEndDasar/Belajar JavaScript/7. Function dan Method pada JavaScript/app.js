@@ -51,7 +51,7 @@
 let programming = 'JavaScript';
 
 function typeSafe(){
-    let programming = 'TypeScript';
+    // let programming = 'TypeScript';
     console.log(programming);
 }
 typeSafe();
