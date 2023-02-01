@@ -26,7 +26,16 @@
 // selamatPagi('Aim');
 
 // 4. Multiple Parameter Dan Argument
-function jumlahkan(a = 0, b = 0) {
+// function jumlahkan(a = 0, b = 0) {
+//     const total = a + b;
+//     console.log(total);
+// }
+
+// 5. Statement Return Pada Function
+function jumlahkan(a, b) {
     const total = a + b;
-    console.log(total);
+    return total;
+    console.log('Selesai');
 }
+
+
