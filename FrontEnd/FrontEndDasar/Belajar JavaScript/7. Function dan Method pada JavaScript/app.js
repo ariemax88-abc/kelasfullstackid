@@ -61,9 +61,66 @@
 // 7. Blocked Scope Variabel
 
 // case 1
+// let tinggi = 8;
+// if (tinggi > 5) {
+//     let lebar = 10;
+//     console.log(lebar);
+// }
+// console.log(tinggi);
+
+// case 2
+// let tinggi = 8;
+// if (tinggi > 5) {
+//     let lebar = 10;
+    // console.log(lebar);
+//}
+// console.log(lebar);
+
+// case 3
+// for (let index = 0; index < 10; index++){
+//     const indexNumber = index;
+//     // console.log(indexNumber);
+// }
+// console.log(indexNumber);
+
+// case 4
+// let tinggi = 8;
+// if (tinggi > 5) {
+//     var lebar = 10;
+//     // console.log(lebar);
+// }
+// console.log("lebar: ", lebar);
+
+// for (let index = 0; index < 10; index++){
+//     var indexNumber = index;
+//     // console.log(indexNumber);
+// }
+// console.log("index: ", indexNumber);
+
+// Case 5
+// let tinggi = 8;
+// if (tinggi > 5) {
+//     var lebar = 10;
+//     // console.log(lebar);
+// }
+// console.log("lebar: ", lebar);
+
+// for (let index = 0; index < 10; index++){
+//     var indexNumber = index;
+//     // console.log(indexNumber);
+// }
+// console.log("index: ", indexNumber);
+
+// case 6
 let tinggi = 8;
 if (tinggi > 5) {
-    let lebar = 10;
-    console.log(lebar);
+    var lebar = 10;
+    // console.log(lebar);
 }
-console.log(tinggi);
+console.log("lebar: ", lebar);
+
+for (let index = 0; index < 10; index++){
+    lebar  = index;
+    // console.log(indexNumber);
+}
+console.log("lebar: ", lebar);
