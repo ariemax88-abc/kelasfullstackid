@@ -112,15 +112,55 @@
 // console.log("index: ", indexNumber);
 
 // case 6
-let tinggi = 8;
-if (tinggi > 5) {
-    var lebar = 10;
-    // console.log(lebar);
-}
-console.log("lebar: ", lebar);
+// let tinggi = 8;
+// if (tinggi > 5) {
+//     var lebar = 10;
+//     // console.log(lebar);
+// }
+// console.log("lebar: ", lebar);
 
-for (let index = 0; index < 10; index++){
-    lebar  = index;
-    // console.log(indexNumber);
+// for (let index = 0; index < 10; index++){
+//     lebar  = index;
+//     // console.log(indexNumber);
+// }
+// console.log("lebar: ", lebar);
+
+
+// 8. Lexical Scope
+
+// case 1 - tidak akan muncul apabila di run
+function lamarKerja(){
+    const jabatan = 'Programmer';
+
+    function orangDalam(){
+        let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
+        console.log(kenalan);
+    }
 }
-console.log("lebar: ", lebar);
+
+// case 2 - akan muncul apabila di run
+function lamarKerja(){
+    const jabatan = 'Programmer';
+
+    function orangDalam(){
+        let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
+        console.log(kenalan);
+    }
+    orangDalam();
+}
+
+// case 3 - ada function di dalam function
+function lamarKerja(){
+    const jabatan = 'Programmer';
+
+    function lebihDalam(){
+        function orangDalam(){
+            let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
+            console.log(kenalan);
+        }
+        orangDalam();
+    }
+    lebihDalam();
+}
+
+
