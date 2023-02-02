@@ -48,11 +48,22 @@
 
 // 6. Visibilitas Variabel Sesuai Scope Atau Ruang Lingkup
 
-let programming = 'JavaScript';
+// let programming = 'JavaScript';
 
-function typeSafe(){
-   let programming = 'TypeScript';
-    console.log(programming);
+// function typeSafe(){
+//    let programming = 'TypeScript';
+//     console.log(programming);
+// }
+// typeSafe(); 
+// console.log(programming);
+
+
+// 7. Blocked Scope Variabel
+
+// case 1
+let tinggi = 8;
+if (tinggi > 5) {
+    let lebar = 10;
+    console.log(lebar);
 }
-typeSafe(); 
-console.log(programming);
+console.log(tinggi);
