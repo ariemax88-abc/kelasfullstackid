@@ -129,38 +129,59 @@
 // 8. Lexical Scope
 
 // case 1 - tidak akan muncul apabila di run
-function lamarKerja(){
-    const jabatan = 'Programmer';
+// function lamarKerja(){
+//     const jabatan = 'Programmer';
 
-    function orangDalam(){
-        let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
-        console.log(kenalan);
-    }
-}
+//     function orangDalam(){
+//         let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
+//         console.log(kenalan);
+//     }
+// }
 
 // case 2 - akan muncul apabila di run
-function lamarKerja(){
-    const jabatan = 'Programmer';
+// function lamarKerja(){
+//     const jabatan = 'Programmer';
 
-    function orangDalam(){
-        let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
-        console.log(kenalan);
-    }
-    orangDalam();
-}
+//     function orangDalam(){
+//         let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
+//         console.log(kenalan);
+//     }
+//     orangDalam();
+// }
 
 // case 3 - ada function di dalam function
-function lamarKerja(){
-    const jabatan = 'Programmer';
+// function lamarKerja(){
+//     const jabatan = 'Programmer';
 
-    function lebihDalam(){
-        function orangDalam(){
-            let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
-            console.log(kenalan);
-        }
-        orangDalam();
-    }
-    lebihDalam();
+//     function lebihDalam(){
+//         function orangDalam(){
+//             let kenalan = `Orang dalam bisa memasukkan ${jabatan}`;
+//             console.log(kenalan);
+//         }
+//         orangDalam();
+//     }
+//     lebihDalam();
+// }
+
+
+// 9. Function Expressions 
+
+// case 1
+function perpangkatan(nilai){
+    return nilai * nilai;
 }
 
+let hasil = perpangkatan(5);
 
+// case 2 - use function ekspression
+const hasilPerpangkatan = function (nilai) {
+    return nilai * nilai;
+}
+
+console.log(hasilPerpangkatan(10));
+
+// case 3 - add parameter function lebih dr satu
+const hasilPerpangkatan = function (nilai, pembanding) {
+    return nilai * pembanding;
+}
+console.log(hasilPerpangkatan(9, 2));
