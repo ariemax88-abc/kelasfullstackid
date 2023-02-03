@@ -2,16 +2,6 @@
 // 1. Foreach Method 
 
 // case 1
-const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-function print(element) {
-    console.log(element)
-}
-
-print(angka[0]);
-print(angka[1]);
-
-// case 2
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // function print(element) {
@@ -21,7 +11,17 @@ print(angka[1]);
 // print(angka[0]);
 // print(angka[1]);
 
-// angka.forEach(print);
+// case 2
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function print(element) {
+    console.log(element)
+}
+
+// print(angka[0]);
+// print(angka[1]);
+
+angka.forEach(print);
 
 // case 3
 
