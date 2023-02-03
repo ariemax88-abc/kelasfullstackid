@@ -167,21 +167,34 @@
 // 9. Function Expressions 
 
 // case 1
-function perpangkatan(nilai){
-    return nilai * nilai;
-}
+// function perpangkatan(nilai){
+//     return nilai * nilai;
+// }
 
-let hasil = perpangkatan(5);
+// let hasil = perpangkatan(5);
 
 // case 2 - use function ekspression
-const hasilPerpangkatan = function (nilai) {
-    return nilai * nilai;
-}
+// const hasilPerpangkatan = function (nilai) {
+//     return nilai * nilai;
+// }
 
-console.log(hasilPerpangkatan(10));
+// console.log(hasilPerpangkatan(10));
 
 // case 3 - add parameter function lebih dr satu
-const hasilPerpangkatan = function (nilai, pembanding) {
-    return nilai * pembanding;
+// const hasilPerpangkatan = function (nilai, pembanding) {
+//     return nilai * pembanding;
+// }
+// console.log(hasilPerpangkatan(9, 2));
+
+
+// 10. Function Sebagai Argument Function Lain
+
+function duakali(func) {
+    func();
+    func();
 }
-console.log(hasilPerpangkatan(9, 2));
+
+function lemparDadu() {
+    const hasil = Math.floor(Math.random() + 6) + 1;
+    console.log(hasil);
+}
