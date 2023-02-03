@@ -189,30 +189,39 @@
 
 // 10. Function Sebagai Argument Function Lain
 
-// function duakali(func) {
-//     func();
-//     func();
-// }
+function duakali(func) {
+    func();
+    func();
+}
 
-// function lemparDadu() {
-//     const hasil = Math.floor(Math.random() + 6) + 1;
-//     console.log(hasil);
-// }
+function lemparDadu() {
+    const hasil = Math.floor(Math.random() * 6) + 1;
+    console.log(hasil);
+}
 
 
 // 11. Function Bernilai Balik Function 
 
-function hasilnyaAdalahFunction(){
-    const rand = Math.random();
-    if (rand > 0.10) {
-        return function(){
-            console.log('Selamat, angkanya lebih besar');
-        }
-    } else {
-        return function(){
-            console.log('Maaf, mungkin bisa coba lagi');
-        }
-    }
-}
+// function hasilnyaAdalahFunction(){
+//     const rand = Math.random();
+//     if (rand > 0.10) {
+//         return function(){
+//             console.log('Selamat, angkanya lebih besar');
+//         }
+//     } else {
+//         return function(){
+//             console.log('Maaf, mungkin bisa coba lagi');
+//         }
+//     }
+// }
 
-const result = hasilnyaAdalahFunction();
+// const result = hasilnyaAdalahFunction();
+
+
+// 12. Definisi Sebuah Method 
+
+// function myFun(){
+//     console.log('Hi');
+//     return 'Hello';
+// }
+
