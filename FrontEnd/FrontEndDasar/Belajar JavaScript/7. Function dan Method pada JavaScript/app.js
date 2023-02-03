@@ -233,10 +233,35 @@
 
 // 13. This Adalah Keyword Sakti
 
-const saya = {
-    nama: 'Max',
-    hobi: 'Mancing ikan',
-    kenalan: function(){ 
-        return `Hi, saya ${this.nama}. Hobi saya ${this.hobi}.`
-    },
-};
+// const saya = {
+//     nama: 'Max',
+//     hobi: 'Mancing ikan',
+//     kenalan: function(){ 
+//         return `Hi, saya ${this.nama}. Hobi saya ${this.hobi}.`
+//     },
+// };
+
+
+// 14. Try And Catch Adalah Penyelamat
+
+// case 1
+
+try {
+    saya.kenalan();
+} catch{
+    console.log('error!!');
+}
+
+// saya.kenalan();
+console.log('Setelah proses try and catch');
+
+// case 2 
+
+function teriak(msg) {
+    try {
+        console.log(msg.toUpperCase());
+    } catch (error) {
+        console.log(error);
+        console.log('Silahkan masukkan tipe data string pada argument teriak');
+    }
+}
