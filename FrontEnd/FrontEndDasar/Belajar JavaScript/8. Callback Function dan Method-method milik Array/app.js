@@ -12,26 +12,26 @@
 // print(angka[1]);
 
 // case 2
-const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-function print(element) {
-    console.log(element)
-}
+// function print(element) {
+//     console.log(element)
+// }
 
 // print(angka[0]);
 // print(angka[1]);
 
-angka.forEach(print);
+// angka.forEach(print);
 
 // case 3
 
-// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// angka.forEach(function(el){
-//     if(el % 2 === 0 ) {
-//         console.log(el);
-//     }
-// });
+angka.forEach(function(el){
+    if(el % 2 === 0 ) {
+        console.log(el);
+    }
+});
 
 // case 4
 
