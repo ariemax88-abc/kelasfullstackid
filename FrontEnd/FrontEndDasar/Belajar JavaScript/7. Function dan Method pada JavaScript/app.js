@@ -189,15 +189,15 @@
 
 // 10. Function Sebagai Argument Function Lain
 
-function duakali(func) {
-    func();
-    func();
-}
+// function duakali(func) {
+//     func();
+//     func();
+// }
 
-function lemparDadu() {
-    const hasil = Math.floor(Math.random() * 6) + 1;
-    console.log(hasil);
-}
+// function lemparDadu() {
+//     const hasil = Math.floor(Math.random() * 6) + 1;
+//     console.log(hasil);
+// }
 
 
 // 11. Function Bernilai Balik Function 
@@ -220,8 +220,13 @@ function lemparDadu() {
 
 // 12. Definisi Sebuah Method 
 
-// function myFun(){
-//     console.log('Hi');
-//     return 'Hello';
-// }
+function myFun(){ // ini adalah function biasa
+    console.log('Hi');
+    return 'Hello';
+}
 
+const myMath = { // ini adalah onject 
+    perkalian: function(x, y) { // ini adalah method
+        return x * y;
+    }
+}
