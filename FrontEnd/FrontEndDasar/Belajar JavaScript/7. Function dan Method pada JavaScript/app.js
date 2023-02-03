@@ -220,13 +220,23 @@
 
 // 12. Definisi Sebuah Method 
 
-function myFun(){ // ini adalah function biasa
-    console.log('Hi');
-    return 'Hello';
-}
+// function myFun(){ // ini adalah function biasa
+//     console.log('Hi');
+//     return 'Hello';
+// }
 
-const myMath = { // ini adalah onject 
-    perkalian: function(x, y) { // ini adalah method
-        return x * y;
-    }
-}
+// const myMath = { // ini adalah onject 
+//     perkalian: function(x, y) { // ini adalah method
+//         return x * y;
+//     }
+// }
+
+// 13. This Adalah Keyword Sakti
+
+const saya = {
+    nama: 'Max',
+    hobi: 'Mancing ikan',
+    kenalan: function(){ 
+        return `Hi, saya ${this.nama}. Hobi saya ${this.hobi}.`
+    },
+};
