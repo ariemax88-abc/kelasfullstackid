@@ -75,30 +75,55 @@
 
 // case 2 
 
-const animes = [
-    {
-        title: 'Attact on Titan',
-        rating: 90,
-    },
-    {
-        title: 'One Piece',
-        rating: 89,
-    },
-    {
-        title: 'Bleach',
-        rating: 82,
-    },
-    {
-        title: 'Hunter x Hunter',
-        rating: 90,
-    },
-    {
-        title: 'Naruto',
-        rating: 84,
-    },
+// const animes = [
+//     {
+//         title: 'Attact on Titan',
+//         rating: 90,
+//     },
+//     {
+//         title: 'One Piece',
+//         rating: 89,
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 82,
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 90,
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 84,
+//     },
 
-];
+// ];
 
-const animeList = animes.map(function(anime){
-    return anime.title.toUpperCase();
-});
+// const animeList = animes.map(function(anime){
+//     return anime.title.toUpperCase();
+// });
+
+
+// 3. Sebelum Lanjut Kenalan Dengan Arrow Function
+
+// case 1
+function perpangkatan(x){
+    return x * x;
+}
+
+// const hasil = perpangkatan(5);
+
+// case 2 - function ekspression
+// const hasil = function(x) {
+//     return x * x;
+// }
+
+// case 3 - arrow function
+// const perpangkatan = (x) => {
+//     return x * x;
+// }
+
+// case 4 - arrow function parameter lebih dr satu
+// const random = () => {
+//     return Math.floor(Math.random() * 1000);
+// };
