@@ -114,14 +114,14 @@
 // const hasil = perpangkatan(5);
 
 // case 2 - function ekspression
-const hasil = function(x) {
-    return x * x;
-}
-
-// case 3 - arrow function
-// const perpangkatan = (x) => {
+// const hasil = function(x) {
 //     return x * x;
 // }
+
+// case 3 - arrow function
+const perpangkatan = (x) => {
+    return x * x;
+}
 
 // case 4 - arrow function parameter lebih dr satu
 // const random = () => {
