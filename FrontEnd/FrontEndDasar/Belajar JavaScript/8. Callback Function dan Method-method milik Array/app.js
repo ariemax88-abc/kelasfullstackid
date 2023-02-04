@@ -124,6 +124,15 @@
 // }
 
 // case 4 - arrow function parameter lebih dr satu
-const random = () => {
-    return Math.floor(Math.random() * 1000);
-};
+// const random = () => {
+//     return Math.floor(Math.random() * 1000);
+// };
+
+
+// 4. Return Secara Implisit Dari Arrow Function
+
+const random = () => (
+    Math.floor(Math.random() * 1000)
+);
+
+const add = (a, b) => a + b
