@@ -119,11 +119,11 @@
 // }
 
 // case 3 - arrow function
-const perpangkatan = (x) => {
-    return x * x;
-}
+// const perpangkatan = (x) => {
+//     return x * x;
+// }
 
 // case 4 - arrow function parameter lebih dr satu
-// const random = () => {
-//     return Math.floor(Math.random() * 1000);
-// };
+const random = () => {
+    return Math.floor(Math.random() * 1000);
+};
