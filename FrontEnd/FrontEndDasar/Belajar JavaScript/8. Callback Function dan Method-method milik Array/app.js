@@ -107,16 +107,16 @@
 // 3. Sebelum Lanjut Kenalan Dengan Arrow Function
 
 // case 1
-function perpangkatan(x){
-    return x * x;
-}
+// function perpangkatan(x){
+//     return x * x;
+// }
 
 // const hasil = perpangkatan(5);
 
 // case 2 - function ekspression
-// const hasil = function(x) {
-//     return x * x;
-// }
+const hasil = function(x) {
+    return x * x;
+}
 
 // case 3 - arrow function
 // const perpangkatan = (x) => {
