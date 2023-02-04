@@ -140,25 +140,25 @@
 // 5. Memahami Settimeout Dan Setinterval
 
 // case 1 - set timeout
-console.log('Halo...');
-setTimeout(() => {
-    console.log('masih di sana gak?');
-}, 5000);
+// console.log('Halo...');
+// setTimeout(() => {
+//     console.log('masih di sana gak?');
+// }, 5000);
 
 // case 2 - set timeout
-console.log('Halo...');
-setTimeout(() => {
-    console.log('masih di sana gak?');
-}, 5000);
-console.log('saya pergi ya..')
+// console.log('Halo...');
+// setTimeout(() => {
+//     console.log('masih di sana gak?');
+// }, 5000);
+// console.log('saya pergi ya..')
 
 // case 3 - set interval
 // nemapilkan angka scr random setiap 2 detik
-// setInterval(( ) => {
-//     console.log(Math.random());
-// }, 2000);
+setInterval(( ) => {
+    console.log(Math.random());
+}, 2000);
 
 // case 4 - set interval function
-// const interval = setInterval(( ) => {
-//     console.log(Math.random());
-// }, 2000);
+const interval = setInterval(( ) => {
+    console.log(Math.random());
+}, 2000);
