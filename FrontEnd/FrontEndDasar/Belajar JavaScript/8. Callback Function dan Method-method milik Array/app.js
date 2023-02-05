@@ -362,47 +362,47 @@
 // 9. Object This Di Dalam Arrow Function Mengarah Pada Object Global Window
 
 // case 1
-const person = {
-    firstName: 'John',
-    lastName: 'Doe',
-    fullName: function () {
-        return `${this.firstName} ${this.lastName}`;
-    },
-};
+// const person = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     fullName: function () {
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+// };
 
 // case 2 - use arrow function
-// const person = {
-//     firstName: 'John',
-//     lastName: 'Doe',
-//     fullName: () => {
-//         console.log(this);
-//         return `${this.firstName} ${this.lastName}`;
-//     },
-// };
-
-// case 3 - use setTimeout arrow function
-// const person = {
-//     firstName: 'John',
-//     lastName: 'Doe',
-//     fullName: () => {
-//         console.log(this);
-//         return `${this.firstName} ${this.lastName}`;
-//     },
-//     panggilNanti: function () {
-//         setTimeout(function () {
-//             console.log(this);
-//             // console.log(this.firstName);
-//             // console.log(this.fullName);
-//         }, 3000);
-//     },
-// };
-
-// case 4 - use regular function
 const person = {
     firstName: 'John',
     lastName: 'Doe',
-    fullName: function (){
+    fullName: () => {
         console.log(this);
         return `${this.firstName} ${this.lastName}`;
     },
 };
+
+// case 3 - use setTimeout arrow function
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullName: () => {
+        console.log(this);
+        return `${this.firstName} ${this.lastName}`;
+    },
+    panggilNanti: function () {
+        setTimeout(function () {
+            console.log(this);
+            // console.log(this.firstName);
+            // console.log(this.fullName);
+        }, 3000);
+    },
+};
+
+// case 4 - use regular function
+// const person = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     fullName: function (){
+//         console.log(this);
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+// };
