@@ -283,44 +283,6 @@
 
 // case 3 - use reduce in array object
 
-const animes = [
-    {
-        title: 'One Piece',
-        rating: 89,
-        year: 2022,
-    },
-    {
-        title: 'Bleach',
-        rating: 82,
-        year: 2020,
-    },
-    {
-        title: 'Attact on Titan',
-        rating: 92,
-        year: 2006
-    },
-    {
-        title: 'Hunter x Hunter',
-        rating: 90,
-        year: 2016,
-    },
-    {
-        title: 'Naruto',
-        rating: 84,
-        year: 2002,
-    },
-
-];
-
-const bestAnime = animes.reduce((bestAnime, currAnime) => {
-    console.log(bestAnime, currAnime);
-    if(currAnime.rating > bestAnime.rating) {
-        return currAnime;
-    }
-    return bestAnime;
-});
-
-// case 4 - ise reduce in low anime
 // const animes = [
 //     {
 //         title: 'One Piece',
@@ -350,10 +312,48 @@ const bestAnime = animes.reduce((bestAnime, currAnime) => {
 
 // ];
 
-// const lowAnime = animes.reduce((lowAnime, currAnime) => {
-//     console.log(lowAnime, currAnime);
-//     if(currAnime.rating < lowAnime.rating) {
+// const bestAnime = animes.reduce((bestAnime, currAnime) => {
+//     console.log(bestAnime, currAnime);
+//     if(currAnime.rating > bestAnime.rating) {
 //         return currAnime;
 //     }
-//     return lowAnime;
+//     return bestAnime;
 // });
+
+// case 4 - ise reduce in low anime
+const animes = [
+    {
+        title: 'One Piece',
+        rating: 89,
+        year: 2022,
+    },
+    {
+        title: 'Bleach',
+        rating: 82,
+        year: 2020,
+    },
+    {
+        title: 'Attact on Titan',
+        rating: 92,
+        year: 2006
+    },
+    {
+        title: 'Hunter x Hunter',
+        rating: 90,
+        year: 2016,
+    },
+    {
+        title: 'Naruto',
+        rating: 84,
+        year: 2002,
+    },
+
+];
+
+const lowAnime = animes.reduce((lowAnime, currAnime) => {
+    console.log(lowAnime, currAnime);
+    if(currAnime.rating < lowAnime.rating) {
+        return currAnime;
+    }
+    return lowAnime;
+});
