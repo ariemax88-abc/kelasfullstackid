@@ -269,17 +269,17 @@
 // 8. Mendapatkan Satu Nilai Sesuai Kondisi Dari Sebuah Array Dengan Reduce
  
 // case 1 - no use reduce method
-const examScore = [80, 85, 70, 90, 93, 77];
-let total = 0;
-for ( let score of examScore){
-    total += score;
-}
+// const examScore = [80, 85, 70, 90, 93, 77];
+// let total = 0;
+// for ( let score of examScore){
+//     total += score;
+// }
 
 // case 2 - use reduce method
 
-// const total = examScore.reduce((total, score) => {
-//     return total + score;
-// });
+const total = examScore.reduce((total, score) => {
+    return total + score;
+});
 
 // case 3 - use reduce in array object
 
