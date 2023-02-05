@@ -225,42 +225,42 @@
 // 7. Menentukan Benar Atau Salah Pada Array Dengan Every Dan Some Method
 
 // case 1 -> hasil true
-const examScore = [80, 85, 79, 90, 93, 77];
-const isGraduate = examScore.every((score) => score >= 75);
+// const examScore = [80, 85, 79, 90, 93, 77];
+// const isGraduate = examScore.every((score) => score >= 75);
 
 // case 2 -> hasil false
-const examScore = [80, 85, 70, 90, 93, 77];
-const isGraduate = examScore.every((score) => score >= 75);
+// const examScore = [80, 85, 70, 90, 93, 77];
+// const isGraduate = examScore.every((score) => score >= 75);
 
 // case 3 - anime use some
 
-// const animes = [
-//     {
-//         title: 'Attact on Titan',
-//         rating: 90,
-//         year: 2006
-//     },
-//     {
-//         title: 'One Piece',
-//         rating: 89,
-//         year: 2022,
-//     },
-//     {
-//         title: 'Bleach',
-//         rating: 82,
-//         year: 2020,
-//     },
-//     {
-//         title: 'Hunter x Hunter',
-//         rating: 90,
-//         year: 2016,
-//     },
-//     {
-//         title: 'Naruto',
-//         rating: 84,
-//         year: 2002,
-//     },
+const animes = [
+    {
+        title: 'Attact on Titan',
+        rating: 90,
+        year: 2006
+    },
+    {
+        title: 'One Piece',
+        rating: 89,
+        year: 2022,
+    },
+    {
+        title: 'Bleach',
+        rating: 82,
+        year: 2020,
+    },
+    {
+        title: 'Hunter x Hunter',
+        rating: 90,
+        year: 2016,
+    },
+    {
+        title: 'Naruto',
+        rating: 84,
+        year: 2002,
+    },
 
-// ];
+];
 
-// const isAnimeListNew = animes.some((anime) => anime.year > 2010);
+const isAnimeListNew = animes.some((anime) => anime.year > 2010);
