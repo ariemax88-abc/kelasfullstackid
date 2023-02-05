@@ -212,14 +212,14 @@ const animes = [
 ];
 
 const animeBagus = animes.filter((anime) => anime.rating >= 85);
-const animeCukupBagus = animes.filter((anime) => anime.rating < 85)
-    .map((anime) => anime.title);
-const animeBaru = animes.filter((anime) => anime.year > 2010);
+// const animeCukupBagus = animes.filter((anime) => anime.rating < 85)
+//     .map((anime) => anime.title);
+// const animeBaru = animes.filter((anime) => anime.year > 2010);
 
 // case 4 - use map (filter & map digabung)
 
-// const judulAnimeBagus = animeBagus.map((anime) => anime.title);
-// animes.filter((anime) => anime.rating >= 85).map((anime) => anime.title);
+const judulAnimeBagus = animeBagus.map((anime) => anime.title);
+animes.filter((anime) => anime.rating >= 85).map((anime) => anime.title);
 
 
 
