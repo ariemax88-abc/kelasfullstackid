@@ -174,47 +174,47 @@
 // });
 
 // case 2
-const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const angkaBaru = angka.filter((n) =>  {
-    return n < 5;
-});
+// const angkaBaru = angka.filter((n) =>  {
+//     return n < 5;
+// });
 
 // case 3
 
-// const animes = [
-//     {
-//         title: 'Attact on Titan',
-//         rating: 90,
-//         year: 2006
-//     },
-//     {
-//         title: 'One Piece',
-//         rating: 89,
-//         year: 2022,
-//     },
-//     {
-//         title: 'Bleach',
-//         rating: 82,
-//         year: 2020,
-//     },
-//     {
-//         title: 'Hunter x Hunter',
-//         rating: 90,
-//         year: 2016,
-//     },
-//     {
-//         title: 'Naruto',
-//         rating: 84,
-//         year: 2002,
-//     },
+const animes = [
+    {
+        title: 'Attact on Titan',
+        rating: 90,
+        year: 2006
+    },
+    {
+        title: 'One Piece',
+        rating: 89,
+        year: 2022,
+    },
+    {
+        title: 'Bleach',
+        rating: 82,
+        year: 2020,
+    },
+    {
+        title: 'Hunter x Hunter',
+        rating: 90,
+        year: 2016,
+    },
+    {
+        title: 'Naruto',
+        rating: 84,
+        year: 2002,
+    },
 
-// ];
+];
 
-// const animeBagus = animes.filter((anime) => anime.rating >= 85);
-// const animeCukupBagus = animes.filter((anime) => anime.rating < 85)
-//     .map((anime) => anime.title);
-// const animeBaru = animes.filter((anime) => anime.year > 2010);
+const animeBagus = animes.filter((anime) => anime.rating >= 85);
+const animeCukupBagus = animes.filter((anime) => anime.rating < 85)
+    .map((anime) => anime.title);
+const animeBaru = animes.filter((anime) => anime.year > 2010);
 
 // case 4 - use map (filter & map digabung)
 
