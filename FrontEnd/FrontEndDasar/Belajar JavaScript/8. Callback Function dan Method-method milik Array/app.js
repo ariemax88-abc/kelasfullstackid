@@ -277,48 +277,48 @@
 
 // case 2 - use reduce method
 
-const total = examScore.reduce((total, score) => {
-    return total + score;
-});
+// const total = examScore.reduce((total, score) => {
+//     return total + score;
+// });
 
 // case 3 - use reduce in array object
 
-// const animes = [
-//     {
-//         title: 'One Piece',
-//         rating: 89,
-//         year: 2022,
-//     },
-//     {
-//         title: 'Bleach',
-//         rating: 82,
-//         year: 2020,
-//     },
-//     {
-//         title: 'Attact on Titan',
-//         rating: 92,
-//         year: 2006
-//     },
-//     {
-//         title: 'Hunter x Hunter',
-//         rating: 90,
-//         year: 2016,
-//     },
-//     {
-//         title: 'Naruto',
-//         rating: 84,
-//         year: 2002,
-//     },
+const animes = [
+    {
+        title: 'One Piece',
+        rating: 89,
+        year: 2022,
+    },
+    {
+        title: 'Bleach',
+        rating: 82,
+        year: 2020,
+    },
+    {
+        title: 'Attact on Titan',
+        rating: 92,
+        year: 2006
+    },
+    {
+        title: 'Hunter x Hunter',
+        rating: 90,
+        year: 2016,
+    },
+    {
+        title: 'Naruto',
+        rating: 84,
+        year: 2002,
+    },
 
-// ];
+];
 
-// const bestAnime = animes.reduce((bestAnime, currAnime) => {
-//     console.log(bestAnime, currAnime);
-//     if(currAnime.rating > bestAnime.rating) {
-//         return currAnime;
-//     }
-//     return bestAnime;
-// });
+const bestAnime = animes.reduce((bestAnime, currAnime) => {
+    console.log(bestAnime, currAnime);
+    if(currAnime.rating > bestAnime.rating) {
+        return currAnime;
+    }
+    return bestAnime;
+});
 
 // case 4 - ise reduce in low anime
 // const animes = [
