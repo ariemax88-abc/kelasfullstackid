@@ -321,39 +321,88 @@
 // });
 
 // case 4 - ise reduce in low anime
-const animes = [
-    {
-        title: 'One Piece',
-        rating: 89,
-        year: 2022,
-    },
-    {
-        title: 'Bleach',
-        rating: 82,
-        year: 2020,
-    },
-    {
-        title: 'Attact on Titan',
-        rating: 92,
-        year: 2006
-    },
-    {
-        title: 'Hunter x Hunter',
-        rating: 90,
-        year: 2016,
-    },
-    {
-        title: 'Naruto',
-        rating: 84,
-        year: 2002,
-    },
+// const animes = [
+//     {
+//         title: 'One Piece',
+//         rating: 89,
+//         year: 2022,
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 82,
+//         year: 2020,
+//     },
+//     {
+//         title: 'Attact on Titan',
+//         rating: 92,
+//         year: 2006
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 90,
+//         year: 2016,
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 84,
+//         year: 2002,
+//     },
 
-];
+// ];
 
-const lowAnime = animes.reduce((lowAnime, currAnime) => {
-    console.log(lowAnime, currAnime);
-    if(currAnime.rating < lowAnime.rating) {
-        return currAnime;
-    }
-    return lowAnime;
-});
+// const lowAnime = animes.reduce((lowAnime, currAnime) => {
+//     console.log(lowAnime, currAnime);
+//     if(currAnime.rating < lowAnime.rating) {
+//         return currAnime;
+//     }
+//     return lowAnime;
+// });
+
+
+// 9. Object This Di Dalam Arrow Function Mengarah Pada Object Global Window
+
+// case 1
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullName: function () {
+        return `${this.firstName} ${this.lastName}`;
+    },
+};
+
+// case 2 - use arrow function
+// const person = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     fullName: () => {
+//         console.log(this);
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+// };
+
+// case 3 - use setTimeout arrow function
+// const person = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     fullName: () => {
+//         console.log(this);
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+//     panggilNanti: function () {
+//         setTimeout(function () {
+//             console.log(this);
+//             // console.log(this.firstName);
+//             // console.log(this.fullName);
+//         }, 3000);
+//     },
+// };
+
+// case 4 - use regular function
+const person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    fullName: function (){
+        console.log(this);
+        return `${this.firstName} ${this.lastName}`;
+    },
+};
