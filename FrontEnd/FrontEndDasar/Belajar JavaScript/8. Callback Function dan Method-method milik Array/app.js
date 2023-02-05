@@ -371,31 +371,31 @@
 // };
 
 // case 2 - use arrow function
-const person = {
-    firstName: 'John',
-    lastName: 'Doe',
-    fullName: () => {
-        console.log(this);
-        return `${this.firstName} ${this.lastName}`;
-    },
-};
+// const person = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     fullName: () => {
+//         console.log(this);
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+// };
 
 // case 3 - use setTimeout arrow function
-const person = {
-    firstName: 'John',
-    lastName: 'Doe',
-    fullName: () => {
-        console.log(this);
-        return `${this.firstName} ${this.lastName}`;
-    },
-    panggilNanti: function () {
-        setTimeout(function () {
-            console.log(this);
-            // console.log(this.firstName);
-            // console.log(this.fullName);
-        }, 3000);
-    },
-};
+// const person = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     fullName: () => {
+//         console.log(this);
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+//     panggilNanti: function () {
+//         setTimeout(function () {
+//             console.log(this);
+//             // console.log(this.firstName);
+//             // console.log(this.fullName);
+//         }, 3000);
+//     },
+// };
 
 // case 4 - use regular function
 // const person = {
