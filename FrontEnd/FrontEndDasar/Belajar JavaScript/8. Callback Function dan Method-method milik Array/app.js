@@ -167,18 +167,18 @@
 // 6. Memiilh Data Tertentu Di Dalam Array Dengan Filter Method
 
 // case 1
-const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-const angkaGanjil = angka.filter((n) =>  {
-    return n % 2 === 1;
-});
-
-// case 2
 // const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// const angkaBaru = angka.filter((n) =>  {
-//     return n < 5;
+// const angkaGanjil = angka.filter((n) =>  {
+//     return n % 2 === 1;
 // });
+
+// case 2
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const angkaBaru = angka.filter((n) =>  {
+    return n < 5;
+});
 
 // case 3
 
