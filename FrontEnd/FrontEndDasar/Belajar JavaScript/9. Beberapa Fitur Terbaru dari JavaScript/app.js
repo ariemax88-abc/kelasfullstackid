@@ -31,12 +31,30 @@
 // }
 
 
-// 2. Mengubah Array Atau Object Menjadi Deret Value Argument Function / spread operator
+// 2. Spread Operator pada function 
 
-Math.max(1,2,3,4,5);
-Math.min(1,2,3,4,5);
+// Math.max(1,2,3,4,5);
+// Math.min(1,2,3,4,5);
 
-const angka = [1,2,3,4,5];
+// const angka = [1,2,3,4,5];
 
-// use spread operator
-Math.max(...angka)
+// // use spread operator
+// Math.max(...angka)
+
+
+// 3. Menggabungkan Nilai Array Dengan Array Lagi
+
+// case 1
+const angka = [1,2,3,4,5,6,7,8,9]
+const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+angka.push(0);
+
+// case 2 - var campuran
+const angka = [1,2,3,4,5,6,7,8,9]
+const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+const campuran = [...angka, 0, 'a', 'b'];
+
+// case 3 - menggabungkan array dg array lainnya
+const angka = [1,2,3,4,5,6,7,8,9]
+const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+const campuran = [...angka, ...nama];
