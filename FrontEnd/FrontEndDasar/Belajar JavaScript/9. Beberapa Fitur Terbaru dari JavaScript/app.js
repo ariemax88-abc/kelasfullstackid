@@ -63,20 +63,20 @@
 // 4. Menggabungkan Property Object Dengan Object Lainnya
 
 // case 1
-const user = {
-    name: 'John',
-    email: 'john@doe.com'
-};
-const userBaru = {...user, id: 123, password: 'password'};
-
-// case 2 
 // const user = {
 //     name: 'John',
 //     email: 'john@doe.com'
 // };
-// const credential = {
-//     password: 'password',
-//     token: 'u112121u2uu1u212nnd'
-// }
+// const userBaru = {...user, id: 123, password: 'password'};
 
-// const userBaru = {...user, ...credential};
+// case 2 
+const user = {
+    name: 'John',
+    email: 'john@doe.com'
+};
+const credential = {
+    password: 'password',
+    token: 'u112121u2uu1u212nnd'
+}
+
+const userBaru = {...user, ...credential};
