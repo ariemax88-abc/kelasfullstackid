@@ -45,16 +45,38 @@
 // 3. Menggabungkan Nilai Array Dengan Array Lagi
 
 // case 1
-const angka = [1,2,3,4,5,6,7,8,9]
-const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
-angka.push(0);
+// const angka = [1,2,3,4,5,6,7,8,9]
+// const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+// angka.push(0);
 
 // case 2 - var campuran
-const angka = [1,2,3,4,5,6,7,8,9]
-const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
-const campuran = [...angka, 0, 'a', 'b'];
+// const angka = [1,2,3,4,5,6,7,8,9]
+// const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+// const campuran = [...angka, 0, 'a', 'b'];
 
 // case 3 - menggabungkan array dg array lainnya
-const angka = [1,2,3,4,5,6,7,8,9]
-const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
-const campuran = [...angka, ...nama];
+// const angka = [1,2,3,4,5,6,7,8,9]
+// const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+// const campuran = [...angka, ...nama];
+
+
+// 4. Menggabungkan Property Object Dengan Object Lainnya
+
+// case 1
+const user = {
+    name: 'John',
+    email: 'john@doe.com'
+};
+const userBaru = {...user, id: 123, password: 'password'};
+
+// case 2 
+// const user = {
+//     name: 'John',
+//     email: 'john@doe.com'
+// };
+// const credential = {
+//     password: 'password',
+//     token: 'u112121u2uu1u212nnd'
+// }
+
+// const userBaru = {...user, ...credential};
