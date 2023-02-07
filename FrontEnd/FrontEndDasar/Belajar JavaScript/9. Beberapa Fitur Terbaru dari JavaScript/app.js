@@ -148,41 +148,41 @@
 // };
 
 // case 2 - use data anime
-const animes = [
-    {
-        title: 'One Piece',
-        rating: 89,
-        year: 2022,
-    },
-    {
-        title: 'Bleach',
-        rating: 82,
-        year: 2020,
-    },
-    {
-        title: 'Attact on Titan',
-        rating: 92,
-        year: 2006
-    },
-    {
-        title: 'Hunter x Hunter',
-        rating: 90,
-        year: 2016,
-    },
-    {
-        title: 'Naruto',
-        rating: 84,
-        year: 2002,
-    },
+// const animes = [
+//     {
+//         title: 'One Piece',
+//         rating: 89,
+//         year: 2022,
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 82,
+//         year: 2020,
+//     },
+//     {
+//         title: 'Attact on Titan',
+//         rating: 92,
+//         year: 2006
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 90,
+//         year: 2016,
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 84,
+//         year: 2002,
+//     },
 
-];
+// ];
 
 // problem: anime dipanggil satu persatu di return nya
-const anime = animes.map((anime) => {
-    return `${anime.title} (${anime.year}) rating ${anime.rating}`;
-})
+// const anime = animes.map((anime) => {
+//     return `${anime.title} (${anime.year}) rating ${anime.rating}`;
+// })
 
 // problem solv: panggil tanpa awalan anime
-const anime = animes.map(({title, year, rating}) => {
-    return `${title} (${year}) rating ${rating}`;
-})
+// const anime = animes.map(({title, year, rating}) => {
+//     return `${title} (${year}) rating ${rating}`;
+// })
