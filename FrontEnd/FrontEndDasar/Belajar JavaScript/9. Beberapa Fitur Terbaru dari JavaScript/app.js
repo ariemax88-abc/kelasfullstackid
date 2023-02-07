@@ -137,51 +137,52 @@
 // 8. Bongkar Properti Object Bisa Dilakukan Di Dalam Function
 
 // case 1
-const user = {
-    name: 'John',
-    email: 'john@doe.com',
-    role: 'Admin',
-};
+// const user = {
+//     name: 'John',
+//     email: 'john@doe.com',
+//     role: 'Admin',
+// };
 
-const userAndRole = ({name, role}) => {
-    return `${name} ${role}`;
-};
+// const userAndRole = ({name, role}) => {
+//     return `${name} ${role}`;
+// };
 
 // case 2 - use data anime
-// const animes = [
-//     {
-//         title: 'One Piece',
-//         rating: 89,
-//         year: 2022,
-//     },
-//     {
-//         title: 'Bleach',
-//         rating: 82,
-//         year: 2020,
-//     },
-//     {
-//         title: 'Attact on Titan',
-//         rating: 92,
-//         year: 2006
-//     },
-//     {
-//         title: 'Hunter x Hunter',
-//         rating: 90,
-//         year: 2016,
-//     },
-//     {
-//         title: 'Naruto',
-//         rating: 84,
-//         year: 2002,
-//     },
+const animes = [
+    {
+        title: 'One Piece',
+        rating: 89,
+        year: 2022,
+    },
+    {
+        title: 'Bleach',
+        rating: 82,
+        year: 2020,
+    },
+    {
+        title: 'Attact on Titan',
+        rating: 92,
+        year: 2006
+    },
+    {
+        title: 'Hunter x Hunter',
+        rating: 90,
+        year: 2016,
+    },
+    {
+        title: 'Naruto',
+        rating: 84,
+        year: 2002,
+    },
 
-// ];
+];
 
-// const anime = animes.map((anime) => {
-//     return `${anime.title} (${anime.year}) rating ${anime.rating}`;
-// })
+// problem: anime dipanggil satu persatu di return nya
+const anime = animes.map((anime) => {
+    return `${anime.title} (${anime.year}) rating ${anime.rating}`;
+})
 
 // problem solv: panggil tanpa awalan anime
-// const anime = animes.map(({title, year, rating}) => {
-//     return `${title} (${year}) rating ${rating}`;
-// })
+const anime = animes.map(({title, year, rating}) => {
+    return `${title} (${year}) rating ${rating}`;
+})
