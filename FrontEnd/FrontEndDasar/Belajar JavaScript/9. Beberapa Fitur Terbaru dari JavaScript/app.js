@@ -85,25 +85,31 @@
 // 5. Malas Bikin Parameter Banyak Bisa Pakai Rest Param 
 
 // case 1
-const sumAll = (...nums) => {
-    return nums.reduce((total, el) => total + el);
-};
+// const sumAll = (...nums) => {
+//     return nums.reduce((total, el) => total + el);
+// };
 
 // case 2
-const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+// const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
 
-const pemenang = (gold, silver, bronze) => {
-    console.log(`Medali emas diraih: ${gold}`)
-    console.log(`Medali silver diraih: ${silver}`)
-    console.log(`Medali bronze diraih: ${bronze}`)
-};
+// const pemenang = (gold, silver, bronze) => {
+//     console.log(`Medali emas diraih: ${gold}`)
+//     console.log(`Medali silver diraih: ${silver}`)
+//     console.log(`Medali bronze diraih: ${bronze}`)
+// };
 
 // case 3 - spread opr di dalam parameter
+// const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix', 'Arie', 'Maxalbert'];
+
+// const pemenang = (gold, silver, bronze, ...sisa) => {
+//     console.log(`Medali emas diraih: ${gold}`)
+//     console.log(`Medali silver diraih: ${silver}`)
+//     console.log(`Medali bronze diraih: ${bronze}`)
+//     console.log(`Peserta lainnya: ${sisa}`)
+// };
+
+// 6. Bongkar Element Array Ke Masing-Masing Variabel Dengan Mudah
+
 const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix', 'Arie', 'Maxalbert'];
 
-const pemenang = (gold, silver, bronze, ...sisa) => {
-    console.log(`Medali emas diraih: ${gold}`)
-    console.log(`Medali silver diraih: ${silver}`)
-    console.log(`Medali bronze diraih: ${bronze}`)
-    console.log(`Peserta lainnya: ${sisa}`)
-};
+const [gold, silver, bronze, ...peserta] = nama;
