@@ -109,7 +109,26 @@
 // };
 
 // 6. Bongkar Element Array Ke Masing-Masing Variabel Dengan Mudah
+/// Destructing tipe data array
 
-const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix', 'Arie', 'Maxalbert'];
+// const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix', 'Arie', 'Maxalbert'];
+// const [gold, silver, bronze, ...peserta] = nama;
 
-const [gold, silver, bronze, ...peserta] = nama;
+// 7. Bongkar Juga Properti Object Ke Masing-Masing Variabel
+// Destructing tipe data object
+
+// case 1
+const user = {
+    name: 'John',
+    email: 'john@doe.com'
+};
+
+const {name, email} = user;
+
+// case 2 - set default value di tipe data object
+const user = {
+    name: 'John',
+    email: 'john@doe.com'
+};
+
+const {name: nama, email, phone = '08923283828'} = user;
