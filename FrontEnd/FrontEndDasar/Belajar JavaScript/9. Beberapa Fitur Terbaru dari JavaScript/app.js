@@ -118,17 +118,70 @@
 // Destructing tipe data object
 
 // case 1
-const user = {
-    name: 'John',
-    email: 'john@doe.com'
-};
+// const user = {
+//     name: 'John',
+//     email: 'john@doe.com'
+// };
 
-const {name, email} = user;
+// const {name, email} = user;
 
 // case 2 - set default value di tipe data object
+// const user = {
+//     name: 'John',
+//     email: 'john@doe.com'
+// };
+
+// const {name: nama, email, phone = '08923283828'} = user;
+
+
+// 8. Bongkar Properti Object Bisa Dilakukan Di Dalam Function
+
+// case 1
 const user = {
     name: 'John',
-    email: 'john@doe.com'
+    email: 'john@doe.com',
+    role: 'Admin',
 };
 
-const {name: nama, email, phone = '08923283828'} = user;
+const userAndRole = ({name, role}) => {
+    return `${name} ${role}`;
+};
+
+// case 2 - use data anime
+// const animes = [
+//     {
+//         title: 'One Piece',
+//         rating: 89,
+//         year: 2022,
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 82,
+//         year: 2020,
+//     },
+//     {
+//         title: 'Attact on Titan',
+//         rating: 92,
+//         year: 2006
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 90,
+//         year: 2016,
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 84,
+//         year: 2002,
+//     },
+
+// ];
+
+// const anime = animes.map((anime) => {
+//     return `${anime.title} (${anime.year}) rating ${anime.rating}`;
+// })
+
+// problem solv: panggil tanpa awalan anime
+// const anime = animes.map(({title, year, rating}) => {
+//     return `${title} (${year}) rating ${rating}`;
+// })
