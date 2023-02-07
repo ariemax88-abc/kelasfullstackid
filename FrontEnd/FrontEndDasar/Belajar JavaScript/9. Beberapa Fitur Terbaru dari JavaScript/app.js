@@ -70,13 +70,40 @@
 // const userBaru = {...user, id: 123, password: 'password'};
 
 // case 2 
-const user = {
-    name: 'John',
-    email: 'john@doe.com'
-};
-const credential = {
-    password: 'password',
-    token: 'u112121u2uu1u212nnd'
-}
+// const user = {
+//     name: 'John',
+//     email: 'john@doe.com'
+// };
+// const credential = {
+//     password: 'password',
+//     token: 'u112121u2uu1u212nnd'
+// }
 
-const userBaru = {...user, ...credential};
+// const userBaru = {...user, ...credential};
+
+
+// 5. Malas Bikin Parameter Banyak Bisa Pakai Rest Param 
+
+// case 1
+const sumAll = (...nums) => {
+    return nums.reduce((total, el) => total + el);
+};
+
+// case 2
+const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+
+const pemenang = (gold, silver, bronze) => {
+    console.log(`Medali emas diraih: ${gold}`)
+    console.log(`Medali silver diraih: ${silver}`)
+    console.log(`Medali bronze diraih: ${bronze}`)
+};
+
+// case 3 - spread opr di dalam parameter
+const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix', 'Arie', 'Maxalbert'];
+
+const pemenang = (gold, silver, bronze, ...sisa) => {
+    console.log(`Medali emas diraih: ${gold}`)
+    console.log(`Medali silver diraih: ${silver}`)
+    console.log(`Medali bronze diraih: ${bronze}`)
+    console.log(`Peserta lainnya: ${sisa}`)
+};
