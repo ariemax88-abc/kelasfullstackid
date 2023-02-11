@@ -11,3 +11,25 @@ const scream = () => {
 }
 
 button.onmouseover = scream;
+
+// add Event Listener in DOM
+const eventbtn = document.querySelector('#eventbtn');
+// eventbtn.addEventListener('click', function(){
+//     alert('clicked');
+// });
+
+// perbedaan event addEventListener dg event onclick
+eventbtn.addEventListener('click', stepSatu);
+eventbtn.addEventListener('click', stepDua);
+   
+
+// case: Kenapa ada add Event Listener?
+function stepSatu(){
+    console.log('step satu');
+}
+function stepDua(){
+    console.log('step dua');
+}
+
+// eventbtn.onclick = stepSatu;
+// eventbtn.onclick = stepDua;
