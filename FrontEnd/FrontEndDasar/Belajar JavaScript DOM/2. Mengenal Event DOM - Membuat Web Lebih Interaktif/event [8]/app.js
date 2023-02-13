@@ -13,32 +13,55 @@
 
 // [9] Praktek Input Realtime Dengan Event Dan Dom 06:55
 
-const form = document.querySelector('#form');
-const input = document.querySelector('input');
-const list = document.querySelector('#notes');
+// const form = document.querySelector('#form');
+// const input = document.querySelector('input');
+// const list = document.querySelector('#notes');
 
 // [10] Event Input Dan Change Pada Form
 // input.addEventListener('change', (e) => {
 //     console.log('Nilai Berubah')
 // });
 
-input.addEventListener('input', (e) => {
-    document.querySelector('h1').innerText = input.value;
-    console.log('Nilai berhasil diinput');
-});
+// input.addEventListener('input', (e) => {
+//     document.querySelector('h1').innerText = input.value;
+//     console.log('Nilai berhasil diinput');
+// });
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const noteValue = input.value;
-    const newList = document.createElement('li');
+// form.addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     const noteValue = input.value;
+//     const newList = document.createElement('li');
     
-    newList.innerText = noteValue;
-     list.append(newList);
-     input.value = '';
+//     newList.innerText = noteValue;
+//      list.append(newList);
+//      input.value = '';
     // console.log(newList);
 
    
     // console.log(noteValue)
     // console.log('submited');
+// });
+
+
+// 11. Mengenal Event Bubbling 
+const button = document.querySelector('#changeColor');
+const container = document.querySelector('#container');
+
+button.addEventListener('click', function(e) {
+    container.style.backgroundColor = generateRandomColor();
+    e.stopPropagation();
 });
+
+// event listener in container
+container.addEventListener('click', function() {
+    container.classList.toggle('hide');
+});
+
+const generateRandomColor = () => {
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+
+    return `rgb(${r}, ${g}, ${b})`;
+}
 
