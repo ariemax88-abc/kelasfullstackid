@@ -24,62 +24,32 @@ const requestPromise = (url) => {
 	});
 };
 
-async function requestHandler() {
-	try {
-		let result = await requestPromise('movie.com');
-		console.log(result);
-	} catch (error) {
-		console.log('Pesan Error', error);
-	}
-}
 
-// 4. Latihan Request Pakai Callback Function
-requestCallback(
-    'movie.com',
-     function(response) {
-    console.log('success', response);
-    requestCallback(
-        'movie.com',
-         function(response) {
-        console.log('success', response);
-        requestCallback(
-            'movie.com',
-             function(response) {
-            console.log('success', response);
-            requestCallback(
-                'movie.com',
-                 function(response) {
-                console.log('success', response);
-                requestCallback(
-                    'movie.com',
-                     function(response) {
-                    console.log('success', response);
-                }, function(error) {
-                
-                    console.log('error', error);
-                    }
-                );
-            }, function(error) {
-            
-                console.log('error', error);
-                }
-            );
-        }, function(error) {
-        
-            console.log('error', error);
-            }
-        );
-    }, function(error) {
-    
-        console.log('error', error);
-        }
-    );
-}, function(error) {
+// 6.	Cara Benar Menggunakan Fungsi Promise
 
-    console.log('error', error);
-    }
-);
 
+// fail pakai contoh promise saja
+// requestPromise('movie.com')
+//     .then((response) => {
+//         console.log('success', response);
+//         requestPromise('movie.com')
+//             .then((response) => {
+//                 console.log('success', response);
+//                 requestPromise('movie.com')
+//                     .then((response) => {
+//                        console.log('success', response);
+//              })
+//                     .catch((error) => {
+//         console.log('error', error);
+//     });
+//         })
+//             .catch((error) => {
+//                 console.log('error', error);
+//         });
+//     })
+//     .catch((error) => {
+//         console.log('error', error);
+//     });
 
 // requestPromise('movie.com')
 // 	.then((result) => {
@@ -99,41 +69,100 @@ requestCallback(
 // 		console.log(err);
 // 	});
 
-// requestPromise('movie.com')
-// 	.then((response) => {
-// 		console.log('success', response);
-// 		requestPromise('movie.com')
-// 			.then((response) => {
-// 				console.log('success', response);
-// 				requestPromise('movie.com')
-// 					.then((response) => {
-// 						console.log('success', response);
-// 						requestPromise('movie.com')
-// 							.then((response) => {
-// 								console.log('success', response);
-// 								requestPromise('movie.com')
-// 									.then((response) => {
-// 										console.log('success', response);
-// 									})
-// 									.catch((error) => {
-// 										console.log('error', error);
-// 									});
-// 							})
-// 							.catch((error) => {
-// 								console.log('error', error);
-// 							});
-// 					})
-// 					.catch((error) => {
-// 						console.log('error', error);
-// 					});
-// 			})
-// 			.catch((error) => {
-// 				console.log('error', error);
-// 			});
-// 	})
-// 	.catch((error) => {
-// 		console.log('error', error);
-// 	});
+// async function requestHandler() {
+// 	try {
+// 		let result = await requestPromise('movie.com');
+// 		console.log(result);
+// 	} catch (error) {
+// 		console.log('Pesan Error', error);
+// 	}
+// }
+
+// 4. Latihan Request Pakai Callback Function
+// requestCallback(
+//     'movie.com',
+//      function(response) {
+//     console.log('success', response);
+//     requestCallback(
+//         'movie.com',
+//          function(response) {
+//         console.log('success', response);
+//         requestCallback(
+//             'movie.com',
+//              function(response) {
+//             console.log('success', response);
+//             requestCallback(
+//                 'movie.com',
+//                  function(response) {
+//                 console.log('success', response);
+//                 requestCallback(
+//                     'movie.com',
+//                      function(response) {
+//                     console.log('success', response);
+//                 }, function(error) {
+                
+//                     console.log('error', error);
+//                     }
+//                 );
+//             }, function(error) {
+            
+//                 console.log('error', error);
+//                 }
+//             );
+//         }, function(error) {
+        
+//             console.log('error', error);
+//             }
+//         );
+//     }, function(error) {
+    
+//         console.log('error', error);
+//         }
+//     );
+// }, function(error) {
+
+//     console.log('error', error);
+//     }
+// );
+
+
+
+
+requestPromise('movie.com')
+	.then((response) => {
+		console.log('success', response);
+		requestPromise('movie.com')
+			.then((response) => {
+				console.log('success', response);
+				requestPromise('movie.com')
+					.then((response) => {
+						console.log('success', response);
+						requestPromise('movie.com')
+							.then((response) => {
+								console.log('success', response);
+								requestPromise('movie.com')
+									.then((response) => {
+										console.log('success', response);
+									})
+									.catch((error) => {
+										console.log('error', error);
+									});
+							})
+							.catch((error) => {
+								console.log('error', error);
+							});
+					})
+					.catch((error) => {
+						console.log('error', error);
+					});
+			})
+			.catch((error) => {
+				console.log('error', error);
+			});
+	})
+	.catch((error) => {
+		console.log('error', error);
+	});
 
 // requestCallback(
 // 	'movie.com',
