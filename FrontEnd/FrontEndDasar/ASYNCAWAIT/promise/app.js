@@ -24,26 +24,45 @@ const requestPromise = (url) => {
 	});
 };
 
-// 6.	Cara Benar Menggunakan Fungsi Promise
+// 7. Cara Membuat Promise
 requestPromise('movie.com')
     .then((result) => {
-        console.log(result);
         console.log('page 1');
-        return requestPromise('movie.com');
-    })
-    .then((result) => {
         console.log(result);
+        return requestPromise('movie.com')
+    })
+    .then(() => {
         console.log('page 2');
-        return requestPromise('movie.com');
+        return requestPromise('movie.com')
     })
-    .then((result) => {
-        console.log(result);
+    .then(() => {
         console.log('page 3');
-        return requestPromise('movie.com');
+        return requestPromise('movie.com')
     })
     .catch((err) => {
         console.log(err);
     });
+
+// 6.	Cara Benar Menggunakan Fungsi Promise
+// requestPromise('movie.com')
+//     .then((result) => {
+//         console.log(result);
+//         console.log('page 1');
+//         return requestPromise('movie.com');
+//     })
+//     .then((result) => {
+//         console.log(result);
+//         console.log('page 2');
+//         return requestPromise('movie.com');
+//     })
+//     .then((result) => {
+//         console.log(result);
+//         console.log('page 3');
+//         return requestPromise('movie.com');
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     });
 
 // fail pakai contoh promise saja
 // requestPromise('movie.com')
