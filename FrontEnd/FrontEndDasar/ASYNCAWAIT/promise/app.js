@@ -11,23 +11,23 @@ const requestCallback = (url, success, failure) => {
 };
 
 // 7. Cara Membuat Promise
-requestPromise('movie.com')
-    .then((result) => {
-        console.log('page 1');
-        console.log(result);
-        return requestPromise('movie.com')
-    })
-    .then(() => {
-        console.log('page 2');
-        return requestPromise('movie.com')
-    })
-    .then(() => {
-        console.log('page 3');
-        return requestPromise('movie.com')
-    })
-    .catch((err) => {
-        console.log(err);
-    });
+// requestPromise('movie.com')
+//     .then((result) => {
+//         console.log('page 1');
+//         console.log(result);
+//         return requestPromise('movie.com')
+//     })
+//     .then(() => {
+//         console.log('page 2');
+//         return requestPromise('movie.com')
+//     })
+//     .then(() => {
+//         console.log('page 3');
+//         return requestPromise('movie.com')
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     });
 
 // Promise version
 const requestPromise = (url) => {
@@ -43,7 +43,7 @@ const requestPromise = (url) => {
 	});
 };
 
-// promise ini masih error saat memanggil requestHandler di console
+// 10. Mengelola Kondisi Error Dengan Async Await - done
 async function requestHandler(){
 	try {
 		let result = await requestPromise('movie.com');
