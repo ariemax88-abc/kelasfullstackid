@@ -43,6 +43,7 @@ const requestPromise = (url) => {
 	});
 };
 
+// promise ini masih error saat memanggil requestHandler di console
 async function requestHandler(){
 	try {
 		let result = await requestPromise('movie.com');
