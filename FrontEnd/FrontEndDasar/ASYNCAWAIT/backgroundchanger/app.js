@@ -1,3 +1,5 @@
+// 9.	Fungsi Await Keyword 07:34
+
 const delayedColorChange = (color, delay) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -34,5 +36,3 @@ async function printRainbow(){
 }
 
 printRainbow();
-
-// last 02:23)
