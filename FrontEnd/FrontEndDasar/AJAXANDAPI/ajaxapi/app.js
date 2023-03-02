@@ -114,16 +114,6 @@
 //     });
 
 // case 2: get data & tampil error
-axios
-    .get('https://swapi.dev/api/people123/1')
-    .then((res) => {
-        console.log(res.data);
-    })
-    .catch((err) => {
-        console.log(err);
-    });
-
-// case 3: add alert
 // axios
 //     .get('https://swapi.dev/api/people123/1')
 //     .then((res) => {
@@ -131,8 +121,18 @@ axios
 //     })
 //     .catch((err) => {
 //         console.log(err);
-//         alert(err.message);
 //     });
+
+// case 3: add alert message
+axios
+    .get('https://swapi.dev/api/people123/1')
+    .then((res) => {
+        console.log(res.data);
+    })
+    .catch((err) => {
+        console.log(err);
+        alert(err.message);
+    });
 
 // case 4: Use Async Await versi Axios
 // const getPeople = async (id) => {
