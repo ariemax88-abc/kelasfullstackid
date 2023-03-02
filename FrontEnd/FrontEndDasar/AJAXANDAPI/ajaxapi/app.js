@@ -104,24 +104,24 @@
 // 11. Req use Library Axios
 
 // case 1: panggil axios
-axios
-    .get('https://swapi.dev/api/people/1')
-    .then((res) => {
-        console.log(res);
-    })
-    .catch((err) => {
-        console.log(err);
-    });
-
-// case 2: get data & tampil error
 // axios
-//     .get('https://swapi.dev/api/people123/1')
+//     .get('https://swapi.dev/api/people/1')
 //     .then((res) => {
-//         console.log(res.data);
+//         console.log(res);
 //     })
 //     .catch((err) => {
 //         console.log(err);
 //     });
+
+// case 2: get data & tampil error
+axios
+    .get('https://swapi.dev/api/people123/1')
+    .then((res) => {
+        console.log(res.data);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
 
 // case 3: add alert
 // axios
