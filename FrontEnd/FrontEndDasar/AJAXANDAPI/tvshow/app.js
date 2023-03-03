@@ -3,9 +3,10 @@ const form = document.querySelector('#search-form');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    document.querySelectorAll('img').forEach(img) => img.remove();
+    document.querySelectorAll('img').forEach((img) => img.remove());
 
     const keyword = form.elements.query.value;
+
     const config = {
         params: { q: keyword},
     };
