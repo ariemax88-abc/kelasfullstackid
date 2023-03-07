@@ -22,43 +22,7 @@
 </body>
 </html> -->
 
-
  <!-- 4. Memanipulasi DOM di jQuery -->
-
- <!-- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- </head>
- <body>
-    <h1>Kemana kamu ingin pergi?</h1>
-    <ul class="lokasi">
-        <li>Bandung</li>
-        <li>Surabaya</li>
-        <li>Jakarta</li>
-    </ul>
-    <script src="jquery-3.6.3.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var jogja = $('<li>Yogyakarta</li>');
-            var bali = $('<li>Bali</li>');
-
-            var subjudul = $('<h2>Pilih destinasimu sekarang juga</h2>')
-
-            $('.lokasi').prepend(jogja);
-            $('.lokasi').append(bali);
-
-            $('.lokasi').before(subjudul);
-        });
-    </script>
-    
- </body>
- </html> -->
-
-<!-- case : Manupulasi use get -->
 
  <!DOCTYPE html>
  <html lang="en">
@@ -71,16 +35,41 @@
  <body>
     <h1>Kemana kamu ingin pergi?</h1>
     <ul class="lokasi">
-        <li>Bandung</li>
-        <li class="surabaya">Surabaya</li>
+        <li class="bandung">Bandung</li>
+        <li class="surabaya">
+            <strong>Surabaya</strong></li>
         <li>Jakarta</li>
+        <li>
+            <input type="text" class="inputan" value="90">
+        </li>
     </ul>
     <script src="jquery-3.6.3.min.js"></script>
     <script>
         $(document).ready(function () {
-            console.log($('.surabaya').text());
+            // var jogja = $('<li>Yogyakarta</li>');
+            // var bali = $('<li>Bali</li>');
+
+            // var subjudul = $('<h2>Pilih destinasimu sekarang juga</h2>')
+
+            // $('.lokasi').prepend(jogja);
+            // $('.lokasi').append(bali);
+
+            // $('.lokasi').before(subjudul);
+                    // dibawah manipulate use GET
+                // console.log($('.surabaya').html());
+                // console.log($('.surabaya').text());
+                // console.log($('.inputan').val());
+                     // dibawah masuk manipulate use SET:
+                // $('.bandung').text('Cimahi');
+                // $('.surabaya').html('<em>Surabaya<em>');
+                // $('.inputan').val(160);
+                     // dibawah manipulate use Remove
+                $('.bandung').remove();
+                $('.surabaya').empty();
         });
     </script>
  </body>
  </html>
+
+<!-- case : Manupulasi use get -->
 
