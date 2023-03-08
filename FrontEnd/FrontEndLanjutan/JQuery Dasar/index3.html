@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .merah{
+            color: red;
+        }
+        .biru{
+            color: blue;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Kemana kamu ingin pergi?</h1>
+    <ul class="lokasi">
+        <li class="bandung">
+            Bandung
+            <button id="keBandung">Pergi!</button>
+            <button id="hapusBandung">X</button>
+        </li>
+        <li class="surabaya">
+            Surabaya
+        </li>
+        <li class="jakarta">
+            Jakarta
+        </li>
+    </ul>
+    <button id="gantiBandungJadiBiru">JADI BIRU</button>
+    <button id="gantiBandungJadiMerah">JADI MERAH</button>
+    <button id="gantiBandungJadiBesar">JADI BESAR</button>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#gantiBandungJadiBiru').on('click', function(){
+                $('.bandung').removeClass('merah');
+                $('.bandung').addClass('biru');
+            });
+            $('#gantiBandungJadiMerah').on('click', function(){
+                $('.bandung').removeClass('biru');
+                $('.bandung').addClass('merah');
+            });
+            $('#gantiBandungJadiBesar').on('click', function(){
+                // $('.bandung').css({
+                    $('.bandung').animate({
+                    fontSize: 100
+                })
+            });
+        });
+    </script>
+ </body>
+ </html>
