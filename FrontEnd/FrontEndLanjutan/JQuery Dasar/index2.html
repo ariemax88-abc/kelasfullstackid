@@ -20,7 +20,9 @@
         <li class="jakarta">
             Jakarta
         </li>
+        
     </ul>
+    <button id="toggleBandung">Toggle Bandung</button>
     <script src="jquery-3.6.3.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -30,6 +32,16 @@
             $('#hapusBandung').on('click', function(){
                 $('.bandung').remove();
                 alert("Bandung dihapus :(");
+            });
+            $('#toggleBandung').on('click', function(){
+                // $('.bandung').hide();
+                // $('.bandung').slideUp(2000);
+                // $('.bandung').toggle();
+                // $('.bandung').fadeToggle();
+                // $('.bandung').slideToggle();
+                $('.bandung').animate({
+                    marginLeft: 200
+                });
             });
         });
     </script>
